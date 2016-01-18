@@ -1,0 +1,1 @@
+$(".owl-carousel").owlCarousel({items:1,lazyLoad:!0,loop:!0,autoplay:!0});
