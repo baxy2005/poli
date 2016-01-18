@@ -1,8 +1,22 @@
 /* Scss Document */
 
-$color-primary: #E65C24;
-$color-secondary: #646463;
+$color-primary: #E14525;
+$color-secondary: #F8CF22;
 $color-black: #000000;
+$color-white: #FFFFFF;
+
+
+$light-color-gray: lighten($color-black, 80% );
+$dark-color-gray: lighten($color-black, 20% );
+$mid-color-gray: lighten($color-black, 50% );
+
+$light-color-primary: lighten($color-primary, 10% );
+$dark-color-primary: darken($color-primary, 10% );
+
+$light-color-secondary: lighten($color-secondary, 10% );
+$dark-color-secondary: darken($color-secondary, 10% );
+
+$light-color-white: rgba($color-white,0.40);
 
 $font-primary: Sica-Regular, sans-serif;
 $font-primaryLight: Sica-Light, sans-serif;
