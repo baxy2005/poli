@@ -1,1 +1,1 @@
-$(".owl-carousel").owlCarousel({items:1,lazyLoad:!0,loop:!0,autoplay:!0});
+$("#main-carousel").owlCarousel({items:1,lazyLoad:!0,loop:!0,autoplay:!0}),$("#news-carousel").owlCarousel({items:2,lazyLoad:!0,loop:!0,autoplay:!1});

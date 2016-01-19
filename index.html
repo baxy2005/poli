@@ -8,7 +8,7 @@
 <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/owl.carousel.css">
- <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -29,7 +29,8 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-2">
-        	<img src="images/poli-brand-typo.svg" alt=""/>
+<!--        	<img src="images/poli-brand-typo.svg" alt=""/>-->       
+			   	<h1 class="brand">Poli</h1>
 			<div class="navbar navbar-default ">
                 <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">Menu</button>
 			 </div>
@@ -39,7 +40,7 @@
                                 <li> <a href="#"><i class="fa fa-instagram"></i></a></li> 
                                 <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li> <a href="#"><i class="fa fa-youtube"></i></a></li>
-                        </ul>
+                      </ul>
                 </div>   
                 <div class="full-brand">
                         <img  src="images/poli-brand-logo.svg" alt=""/> 
@@ -72,7 +73,7 @@
                             </div>
                         </li>
                     </ul> <!--rovid bemutatkozas-->
-                </div>
+              </div>
              </div>   
             	<div class="col-lg-4">
                     <blockquote>
@@ -85,20 +86,58 @@ a demokrácia, az európaiság. </p>
             	<div class="col-lg-8">
                 <div class="white-box">
                 	<h1>FRISS <span>hírek</span></h1>
-                    <ul class="media-list">
-                        <li class="media">
-                            <div class="media-left media-middle">
-                                  <a href="#">
-                                    <img class="media-object img-circle" src="images/hidden-hungary-blog-temp-02.jpg" width="134" alt="...">
-                                  </a>
-                            </div>
-                            <div class="media-body">
-                                  <h4 class="media-heading">Köszöntjük az oldalunkon</h4>
-                                  <p>A Közgazdasági Politechnikum Alternatív Gimnázium és Szakközépiskola alapítványi iskola, amelyben gimnáziumi tagozat és érettségi utáni szakképzés is működik. A gimnáziumban van hatosztályos és négyosztályos képzés is, ezek a nyelvi előkészítő évvel egészülnek ki a kilencedik évfolyamon – vagyis diákjaink a 13. évfolyam elvégzése után tehetnek érettségit.</p>
-                                  <button class="btn btn-default submit">teljes Bemutatkozás</button>
-                            </div>
-                        </li>
-                    </ul> <!--rovid bemutatkozas-->
+                    <div class="owl-carousel" id="news-carousel">
+                      <div class="item">
+                        <div class="thumbnail">
+                          <img src="images/poli-news-tn-01@2x.jpg" width="129" height="129" alt="...">
+                          <div class="caption">
+                            <h3>Gerze, Here We Come</h3>
+                            <p>The next installment of the Erasmus+ Gardening: Culture and Science...</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                          </div>
+                        </div>
+                      </div><!--one thumbnails-->
+                      <div class="item">
+                        <div class="thumbnail">
+                          <img src="..." alt="...">
+                          <div class="caption">
+                            <h3>Önkéntesek jelentkezése BAGázshoz</h3>
+                            <p>A BAGázs újra várja lelkes közösségi szolgálatosok jelentkezését. …</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                          </div>
+                        </div>
+                      </div><!--one thumbnails-->
+                      <div class="item">
+                        <div class="thumbnail">
+                          <img src="..." alt="...">
+                          <div class="caption">
+                            <h3>Gerze, Here We Come</h3>
+                            <p>The next installment of the Erasmus+ Gardening: Culture and Science...</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                          </div>
+                        </div>
+                      </div><!--one thumbnails-->
+                      <div class="item">
+                        <div class="thumbnail">
+                          <img src="..." alt="...">
+                          <div class="caption">
+                            <h3>Önkéntesek jelentkezése BAGázshoz</h3>
+                            <p>A BAGázs újra várja lelkes közösségi szolgálatosok jelentkezését. …</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                          </div>
+                        </div>
+                      </div><!--one thumbnails-->
+                      <div class="item">
+                        <div class="thumbnail">
+                          <img src="..." alt="...">
+                          <div class="caption">
+                            <h3>Önkéntesek jelentkezése BAGázshoz</h3>
+                            <p>A BAGázs újra várja lelkes közösségi szolgálatosok jelentkezését. …</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                          </div>
+                        </div>
+                      </div><!--one thumbnails-->
+                    </div>
                 </div>
              </div>   
             	<div class="col-lg-4">
@@ -184,6 +223,8 @@ a demokrácia, az európaiság. </p>
 <!-- <script src="js/bootstrap.min.js"></script> -->
 <script src="js/bootstrap-3.3.4.js" type="text/javascript"></script>
 <script src="js/jasny-bootstrap.min.js"></script>
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 <script src="http://localhost:35729/livereload.js"></script>
