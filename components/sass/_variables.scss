@@ -2,6 +2,7 @@
 
 $color-primary: #E14525;
 $color-secondary: #F8CF22;
+$color-tertiary: #796B9C;
 $color-black: #000000;
 $color-white: #FFFFFF;
 
@@ -19,6 +20,7 @@ $dark-color-secondary: darken($color-secondary, 10% );
 
 $light-color-white: rgba($color-white,0.40);
 $light-2-color-white: rgba($color-white,0.85);
+$light-3-color-white: rgba($color-white,0.50);
 
 $font-primary: Sica-Regular, sans-serif;
 $font-primaryLight: Sica-Light, sans-serif;
