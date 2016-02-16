@@ -31,11 +31,11 @@ $(function() {
     offset: 60 /* offset the trigger 150px below #scene's top */
 	
   })
-    .setClassToggle('.navbar-toggle', 'navbar-toggle-fixed')
+    .setClassToggle('.navmenu', 'navmenu-fixed')
     .addTo(scrollMagicController);
 	
 	  var scene2 = new ScrollScene({
-		offset: 800
+		offset: 600
   })
   .setClassToggle('body', 'scene-2-active')
   .addTo(scrollMagicController);
@@ -50,3 +50,5 @@ $(function() {
 			  $(".navbar-toggle").on("click", function () {
 				    $(this).toggleClass("active");
 			  });
+
+
