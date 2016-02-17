@@ -415,18 +415,18 @@ main, .container {
 .white-box{
 background-color: $light-2-color-white;
 text-align: center;
+padding: 30px;
 	h1 {
-		margin-top: 0;
-		font-family: Eveleth Clean Thin, sans-serif;
-		font-size: 28px;
-		color: $color-primary;
-		line-height: 54px;
-		padding: 10px 0px 2px 0px;
-		background-color: $color-secondary;
-		display: inline;
-		box-shadow: 20px 0px 0px $color-secondary, -20px 0px 0px $color-secondary;
-		box-decoration-break: clone;
-		
+			margin-top: 0;
+			font-family: Eveleth Clean Thin, sans-serif;
+			font-size: 28px;
+			color: #E45639;
+			line-height: 18px;
+			padding: 12px 0px 0 0px;
+			background-color: #F8CF22;
+			display: block;
+			box-decoration-break: clone;
+			margin-bottom: 40px;
 		span {
 		font-family: Eveleth Clean Regular, sans-serif;
 	}
@@ -445,7 +445,7 @@ text-align: center;
 margin: 45px 0 60px 0;	
 }
 .calendar {
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	 h4 {
 	padding: 16px;
