@@ -4,6 +4,7 @@ $('#main-carousel').owlCarousel({
     lazyLoad:true,
     loop:true,
 	autoplay: true,
+	nav:false,
 });
 
 $('#news-carousel').owlCarousel({
@@ -17,6 +18,7 @@ $('#calendar-carousel').owlCarousel({
     lazyLoad:true,
     loop:true,
 	autoplay: true,
+	nav:true,
 });
 
   
@@ -34,6 +36,8 @@ $(function() {
     .setClassToggle('.navmenu', 'navmenu-fixed')
     .addTo(scrollMagicController);
 	
+	
+	
 	/*  var scene2 = new ScrollScene({
 		offset: 600
   })
@@ -41,10 +45,36 @@ $(function() {
   .addTo(scrollMagicController);*/
   
   var scene3 = new ScrollScene({
-    offset: 605 /* offset the trigger 150px below #scene's top */
+    offset: 585 /* offset the trigger 150px below #scene's top */
 	
   })
     .setClassToggle('.secondary-nav', 'secondary-nav-top')
+    .addTo(scrollMagicController);
+	
+	 var scene5 = new ScrollScene({
+    offset: 585 /* offset the trigger 150px below #scene's top */
+	
+  })
+    .setClassToggle('#main-carousel', 'carusel-margin-add')
+    .addTo(scrollMagicController);
+	
+		 var scene6 = new ScrollScene({
+    offset: 665 /* offset the trigger 150px below #scene's top */
+	
+  })
+    .setClassToggle('.secondary-nav', 'fade-secondary-nav-bg')
+    .addTo(scrollMagicController);
+	
+	
+	var tween = TweenMax.from('.brand-on', 0.2, {
+    opacity: 0,
+  });
+		 var scene7 = new ScrollScene({
+			  triggerElement: '#brand-switch',
+			   offset: -15
+	
+  })
+    .setTween(tween)
     .addTo(scrollMagicController);
 	
 	

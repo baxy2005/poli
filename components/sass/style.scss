@@ -48,6 +48,17 @@ font-style: normal;
 @import "mixins";
 
 
+a:focus, a:hover {
+    color: $color-primary;
+}
+
+.brand-off {
+	display: none;
+}
+.brand-on {
+	opacity: 1;
+}
+
 body{
 	background: $color-primary;
 	font-family: ProximaNova-Regular, sans-serif;
@@ -215,6 +226,12 @@ body{
 
 @media (min-width: 992px) {
 	
+	
+	
+	.carusel-margin-add {
+	margin-bottom: 120px !important;	
+	}
+	
 	.media {
     margin-bottom: 20px;
 	margin-top: 0px;
@@ -224,6 +241,9 @@ body{
 		
 		
 	}
+	
+
+	
 	.form-inline-opening-fixed {
 	position: fixed;
     z-index: 1032;
@@ -264,6 +284,7 @@ body{
 	box-shadow: 0px 0px 20px 0px rgba(227,86,56,0.70);
 }
 
+
  .secondary-nav .nav > li > a:focus, .nav > li > a:hover {
     text-decoration: none;
     background-color: $color-white;
@@ -283,6 +304,8 @@ body{
     font-size: 18px;
 	margin-bottom: 0px;
 	margin-right: 5px;
+	vertical-align: -1px;
+	padding-top: 2px;
 	}
 
 .secondary-nav-top .nav > li > a {
@@ -293,11 +316,28 @@ body{
 	padding:5px 10px;
 	width: 100%;
 	height: 100%;
+}
+
+.secondary-nav-top .nav > li > a:hover, .secondary-nav-top .nav > li > a:focus {
+    color: $color-primary !important;
+}
+
+.secondary-nav-top .nav > li > a {
+	-moz-transition: background .3s ease-in;
+	-o-transition: background .3s ease-in;
+	-webkit-transition: background .3s ease-in;
+	transition: background .3s ease-in;
+}
+	.fade-secondary-nav-bg .nav > li > a {
 	background-color: $color-primary;
 	box-shadow: 0px 0px 10px 0px rgba(227,86,56,0.70);
-}
+	}
+	.fade-secondary-nav-bg  .nav > li > a:hover, .fade-secondary-nav-bg  .nav > li > a:focus{
+		background-color: $color-white;
+
+	}
 .secondary-nav-top .navbar-nav > li {
-    margin-right: 12px;	
+    margin-right: 15px;	
 }
 
 .secondary-nav-top .navbar-nav {
@@ -339,11 +379,14 @@ body{
 	margin-left: 45px;
 	margin-top: 86px;
 }
-.nav > li > a {
+.navmenu-default .nav > li > a {
 	font-size: 14px;	
 	padding: 8px 0 5px 0;
 	letter-spacing: 0.31px;
 	color:$color-white !important;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+color: $color-white;
 }
   .navmenu-brand, .navbar-toggle, .navbar {
     display: none;
@@ -407,16 +450,18 @@ blockquote{
 	padding: 0;
 	border-left: none;
 	background: transparent;
+	padding-left: 5px;
+	margin-bottom:205px;
 
  p {
     font-family: Eveleth Clean Thin, sans-serif;
     color: rgb(228, 86, 57);
     line-height: 30px;
     font-size: 15px;
-    background: $light-4-color-white;
+    background: $light-2-color-white;
 	@include stencil;    
 	padding: 5px 0 2px 0;
-	box-shadow: 5px 0px 0px $light-4-color-white, -5px 0px 0px $light-4-color-white;
+	box-shadow: 5px 0px 0px $light-2-color-white, -5px 0px 0px $light-2-color-white;
     margin: 0px;
  }
  span {
@@ -495,8 +540,8 @@ padding: 30px;
 			font-family: Eveleth Clean Thin, sans-serif;
 			font-size: 28px;
 			color: #E45639;
-			line-height: 18px;
-			padding: 12px 0px 0 0px;
+			line-height: 16px;
+			padding: 11px 0px 3px 0px;
 			background-color: #F8CF22;
 			display: block;
 			box-decoration-break: clone;
@@ -510,9 +555,20 @@ padding: 30px;
 }
 
 .margint-bottom-thirty {
-	margin-bottom: 20px;	
+	margin-bottom: 30px;	
 }
 
+
+/*	faliujsag-front*/
+
+.bulletin-board {
+	 p {
+	font-size: 20px;
+	margin: 30px 0 0 0 ;
+	color: $color-primary;
+}
+	
+}
 
 /*	calendar-front*/
 
@@ -523,24 +579,23 @@ margin: 45px 0 60px 0;
 	width: 100%;
 	margin: auto;
 	 h4 {
-	padding: 7px 8px 3px 8px;
+	padding: 12px 8px 7px 8px;
 	background-color:  $color-secondary;
 	color: white;
-	font-size: 17px;
+	font-size: 24px;
 	margin: 0;
 	margin-top:15px;
 }
 	h2 {
 	border: 	$color-secondary solid 1px;
 	margin: 0;
-	padding:10px 0;
-	font-size: 68px;
+	padding:15px 0;
 	margin-bottom: 0px;
-	font-size: 20px;
+	font-size: 34px;
 }
  p {
 	font-size: 20px;
-	margin: 10px 0 0 0 ;
+	margin: 15px 0 0 0 ;
 	color: $color-primary;
 }
 .one-cal {
@@ -550,7 +605,7 @@ margin: 45px 0 60px 0;
 
 .calendar h4, .calendar h2 {
 	margin: 0 auto;
-	width: 60%;
+	width: 90%;
 }
 
 /*owl carusel*/
@@ -560,9 +615,6 @@ margin: 45px 0 60px 0;
 }
 
 .owl-theme .owl-controls {
-	position: absolute;
-	top: 15px;
-	left: 15px;
 }
 
 .owl-theme .owl-controls .owl-dots div{
@@ -583,9 +635,43 @@ margin: 45px 0 60px 0;
 	width: 12px;
 }
 
+ .bulletin-board .owl-theme .owl-controls .owl-nav {
+	text-align: center !important;
+	margin-top: 40px;
+}
+.owl-theme .owl-controls  .owl-prev, .owl-theme .owl-controls .owl-next {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	text-indent: -3000px;
+	background: $light-color-gray;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 80px;
+	margin:2px;
+	
+}
+.owl-theme .owl-controls .owl-prev a {
+	background: $dark-color-gray !important;
+}
+
+.owl-theme .owl-controls  .owl-prev {
+	background-image:  url(../images/poli-carousel-arrow-left.svg);
+}
+.owl-theme .owl-controls  .owl-next {
+	background-image:  url(../images/poli-carousel-arrow-right.svg);
+}
+.owl-dots {
+
+position: absolute;
+top: 20px;
+left: 15px;	
+}
+
 /*social icons*/
 .social-icons {
 	text-align: center;	
+	margin-top: 38px;
 }
 
 .social-icons .fa {
@@ -593,13 +679,13 @@ margin: 45px 0 60px 0;
 }
 .social-icons .fa {
 	border-radius: 50%;
-	border: 2px solid $light-color-white;	
+	border: 2px solid $color-white;	
 	width: 37px;
 	height: 37px;
 	line-height: 33px;
 	text-align: center;
 	background: transparent;
-	color: $light-color-white;
+	color: $color-white;
 	&:hover{
 	color: $color-white;
 	}
