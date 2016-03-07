@@ -367,7 +367,7 @@ body{
     border-radius: 0;
 	width: 166px;
 	margin-left: 45px;
-	margin-top: 146px;
+	margin-top: 140px;
 }
 
   .navmenu-fixed {
@@ -483,7 +483,7 @@ blockquote{
 .full-brand {
 	position: fixed;
 	width: 166px;
-	bottom: 60px;
+	bottom: 15px;
 	left: 50px;
 	right: 0px;
 
@@ -509,14 +509,57 @@ blockquote{
 			font-family: Eveleth Clean Thin, sans-serif;
 			font-size: 11px;
 			color: $color-primary;
-			line-height: 16px;	
+			line-height: 22px;	
 			background-color: $color-secondary; 
 			@include stencil;
 			box-shadow: 5px 0px 0px $color-secondary, -5px 0px 0px $color-secondary;
-			padding-top: 4px;
+			padding-top: 6px;
+			padding-bottom: 2px;
 			
 	}
+	address {
+			font-size: 12px;
+			color: $color-white;
+			margin-top: 5px;
+			line-height: 1.6;
+			margin-bottom: 0px;
+		
+	}
+	.glyphicon {
+		top: 3px;
+	}
  }
+ 
+.icon-location, icon-phone, .icon-email, .icon-om , .icon-phone{
+ 			opacity: .4;
+ 			background-repeat: no-repeat;
+			padding-right: 15px;
+
+ 
+ }
+.icon-location {
+			width: 9px;
+			height: 14px;
+			background-image:url(../images/poli-address-location-icon.svg);
+			}
+			
+			.icon-email {
+			width: 13px;
+			height: 13px;
+			background-image:url(../images/poli-address-email-icon.svg);
+			margin-left: 5px;
+			}
+		.icon-phone {
+			width: 13px;
+			height: 11px;
+			background-image:url(../images/poli-address-phone-icon.svg);
+			}
+		.icon-om {
+			width: 11px;
+			height: 11px;
+			background-image:url(../images/poli-address-om-icon.svg);
+			}
+
 .bg-illu {
 	background-image:url(../images/poli-bg-illu.svg);
 	background-repeat: repeat;

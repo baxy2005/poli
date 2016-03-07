@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="9px" height="14px" viewBox="0 0 9 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.3 (16618) - http://www.bohemiancoding.com/sketch -->
+    <title>poli-address-location-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="poli-address-location-icon" sketch:type="MSArtboardGroup" fill="#FFFFFF">
+            <g id="place" sketch:type="MSLayerGroup">
+                <path d="M4.55867491,0.0313205128 C2.1690636,0.0313205128 0.233586572,1.97597436 0.233586572,4.37688462 C0.233586572,5.64271795 0.771519435,6.78335897 1.63113074,7.57624359 L1.68249117,7.63188462 C3.98830389,10.1440769 4.33701413,12.6646154 4.4235159,13.5826923 L4.4640636,13.9415769 L4.59111307,13.9499231 C4.710053,13.6272051 4.67220848,10.6392821 7.43215548,7.63188462 L7.47270318,7.58737179 C8.34042403,6.79170513 8.88376325,5.64828205 8.88376325,4.37688462 C8.88376325,1.97597436 6.94828622,0.0313205128 4.55867491,0.0313205128 Z M2.39613074,4.48260256 C2.39613074,3.2529359 3.36386926,2.25696154 4.55867491,2.25696154 C5.75348057,2.25696154 6.72121908,3.2529359 6.72121908,4.48260256 C6.72121908,5.70948718 5.75348057,6.70824359 4.55867491,6.70824359 C3.36386926,6.70824359 2.39613074,5.70948718 2.39613074,4.48260256 Z" id="Fill-8" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
