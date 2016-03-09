@@ -218,6 +218,21 @@ body{
     background-color: $color-secondary;
 }
 
+
+@media (max-width: 767px) {
+.media {
+text-align: center;	
+}
+
+.media img {
+margin: 0 auto;	
+}
+
+}
+
+
+
+
 @media (min-width: 0) {
   .navbar-toggle {
     display: block; /* force showing the toggle */
@@ -235,11 +250,13 @@ body{
 	.media {
     margin-bottom: 20px;
 	margin-top: 0px;
+	padding:0px;
+	text-align: left;
 }
 	
 	.form-inline-opening {
 		
-		
+		width: 165px;
 	}
 	
 
@@ -368,6 +385,7 @@ body{
 	width: 166px;
 	margin-left: 45px;
 	margin-top: 140px;
+	bottom: auto;
 }
 
   .navmenu-fixed {
@@ -523,6 +541,10 @@ blockquote{
 			margin-top: 5px;
 			line-height: 1.6;
 			margin-bottom: 0px;
+			margin-left: -4px;
+			a {
+			color: $color-white;	
+			}
 		
 	}
 	.glyphicon {
@@ -541,6 +563,8 @@ blockquote{
 			width: 9px;
 			height: 14px;
 			background-image:url(../images/poli-address-location-icon.svg);
+			margin-left:2px;
+			padding-right: 17px;
 			}
 			
 			.icon-email {
@@ -553,11 +577,14 @@ blockquote{
 			width: 13px;
 			height: 11px;
 			background-image:url(../images/poli-address-phone-icon.svg);
+			padding-right:19px;
 			}
 		.icon-om {
 			width: 11px;
 			height: 11px;
 			background-image:url(../images/poli-address-om-icon.svg);
+			padding-right:17px;
+			margin-left:1px
 			}
 
 .bg-illu {
@@ -744,3 +771,106 @@ a {
 }
 }
 }
+
+@media (max-width: 991px) {
+	
+	.container {
+		margin-left: auto;
+	}
+	
+	
+	.brand, .navbar-top {
+		position: fixed;
+	
+	}
+	
+	.brand {
+	font-size: 40px;
+	top: 10px;
+	margin-top: 0px;
+	left: 60px;
+	line-height: 50px;
+	z-index: 556;
+	letter-spacing: 2px
+}
+
+
+.navbar-top {
+	 min-height: 60px;
+	 z-index: 555;
+	 position: fixed;
+	 background-color: $color-primary;
+	 top: 0px;
+	left: 0px;
+	width: 100%;
+	 }
+
+.navbar-toggle {
+	width: 35px;
+	height: 35px;
+	top: 12px;
+	left: 15px;
+	
+	.icon-bar {
+    margin-top: 0px;
+}
+}
+
+.full-brand {
+	z-index: 666;
+}
+.full-brand address {
+	position: fixed;
+	top: 12px;
+	text-align: left;
+	right: 15px;
+	margin-top: 0;
+}
+
+.icon-location, icon-phone, .icon-email, .icon-om , .icon-phone{
+ 			opacity: 1;
+ 			background-repeat: no-repeat;
+			margin:0;
+			padding:0;
+			margin-left: 6px;
+			width: 35px;
+			height: 35px;
+			display: inline-block;
+			border-radius: 30px;
+			border: 2px solid white;
+			background-position: center center;
+ 
+ }
+ .icon-location {
+	 background-size: 13px 20px;
+	
+ }
+  .icon-phone {
+	 background-size: 19px 16px;
+	  margin-left: 4px;
+ }
+ 
+   .icon-email {
+	 background-size: 19px 19px;
+ }
+ 
+ .full-brand .glyphicon {
+    top: 0px;
+}
+
+.bg-illu {
+	margin-top: 52px;
+	margin-left: 0;
+}
+
+.media-left, .media > .pull-left {
+    padding-right: 0px;
+    width: 100%;
+    display: block;
+}
+	.media {
+	padding:0px;
+}
+
+}
+
