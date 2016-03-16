@@ -3,7 +3,7 @@ $('#main-carousel').owlCarousel({
     items:1,
     lazyLoad:true,
     loop:true,
-	autoplay: true,
+	autoplay: false,
 	nav:false,
 });
 
@@ -97,3 +97,8 @@ $(function() {
 			  });
 
 
+$('.secondary-nav ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(170);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeOut(170);
+});

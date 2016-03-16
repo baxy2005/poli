@@ -47,9 +47,12 @@ font-style: normal;
 @import "variables";
 @import "mixins";
 
-
+a:active {
+    outline: none;
+}
 a:focus, a:hover {
     color: $color-primary;
+	outline: none;
 }
 
 .brand-off {
@@ -169,19 +172,23 @@ body{
     font-size: 14px;
     text-align: left;
     list-style: outside none none;
-    background-color: $light-color-white;
+    background-color: $light-5-color-white;
     left: 0px;
     top: 100%;
 	width: 100%;
 	box-shadow: none;
 	border-radius: 0px;
 	border: none;
-	margin-bottom: 15px
+	margin-bottom: 15px;
+	margin-top: 0px;
+
 }
+
 
 .dropdown-menu > li > a {
 	white-space: normal !important;
 }
+
 
 .navmenu-default, .navbar-default .navbar-offcanvas {
     background-color: #4A4A4A;
@@ -218,6 +225,10 @@ body{
     background-color: $color-secondary;
 }
 
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+	color: $color-white;
+	background-color: $color-primary;
+}
 
 @media (max-width: 767px) {
 .media {
@@ -282,6 +293,14 @@ margin: 0 auto;
 	width: 121px;
 	text-align: center;
 	padding:13px 0;
+	-moz-transition: background .2s ;
+	-o-transition: background .2s ;
+	-webkit-transition: background .2s ;
+	transition: background .2s ;
+
+}
+.secondary-nav .nav > li > a a:active, .secondary-nav .nav > li > a a:focus {
+	background-color: $color-white;
 }
 
 .secondary-nav .dropdown {
@@ -298,19 +317,44 @@ margin: 0 auto;
     top: 100%;
 	width: 100%;
 	margin-bottom: 15px;
-	box-shadow: 0px 0px 20px 0px rgba(227,86,56,0.70);
+	box-shadow: 0px 10px 15px -7px rgba(227,86,56,0.70);
+
 }
 
+/*.secondary-nav .dropdown:hover .dropdown-menu {
+display: block;
+}
+*/
 
  .secondary-nav .nav > li > a:focus, .nav > li > a:hover {
     text-decoration: none;
     background-color: $color-white;
 	color: $color-primary !important;
-	-moz-transition: all .2s ease-in;
-	-o-transition: all .2s ease-in;
-	-webkit-transition: all .2s ease-in;
-	transition: all .2s ease-in;
 }
+
+ .secondary-nav .nav > li:hover a {
+    background-color: $color-white;
+	color: $color-primary !important;
+}
+
+
+
+
+/*.secondary-nav .dropdown .dropdown-menu{
+    display: block;
+    opacity: 0;
+
+    -moz-transition:    all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -o-transition:      all .3s ease-in;
+    -ms-transition:     all .3s ease-in;
+    transition:         all .3s ease-in;
+}
+ .secondary-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+*/
 
 /* secondary-nav-top */
 
@@ -340,10 +384,10 @@ margin: 0 auto;
 }
 
 .secondary-nav-top .nav > li > a {
-	-moz-transition: background .3s ease-in;
-	-o-transition: background .3s ease-in;
-	-webkit-transition: background .3s ease-in;
-	transition: background .3s ease-in;
+	-moz-transition: background .2s ;
+	-o-transition: background .2s;
+	-webkit-transition: background .2s ;
+	transition: background .2s ;
 }
 	.fade-secondary-nav-bg .nav > li > a {
 	background-color: $color-primary;
@@ -436,8 +480,10 @@ color: $color-white;
 }
 .dropdown-menu > li > a {
     padding: 3px 10px;
-    color: #333;
+    color: $light-4-color-white;
     font-size: 11px;
+	margin: 0 5px;
+	
 }
 .form-inline {
 	background: white;
@@ -474,11 +520,11 @@ blockquote{
  p {
     font-family: Eveleth Clean Thin, sans-serif;
     color: rgb(228, 86, 57);
-    line-height: 30px;
+    line-height: 31px;
     font-size: 15px;
     background: $light-2-color-white;
 	@include stencil;    
-	padding: 5px 0 2px 0;
+	padding: 6px 0 2px 0;
 	box-shadow: 5px 0px 0px $light-2-color-white, -5px 0px 0px $light-2-color-white;
     margin: 0px;
  }
@@ -518,6 +564,7 @@ blockquote{
 			background-color: $color-white; 
 			@include stencil;
 			padding-top: 6px;
+			box-shadow: 5px 0px 0px $color-white, -5px 0px 0px $color-white;
 			
 				span {
 					font-family: Eveleth Clean Regular, sans-serif;
@@ -628,6 +675,31 @@ padding: 30px;
 	margin-bottom: 30px;	
 }
 
+.white-box .btn{
+padding: 10px 20px 6px 20px;	
+border: 2px solid $light-color-gray;
+border-radius: 0;
+background-color: transparent;
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+
+}
+
+.white-box .btn-default {
+font-family: Eveleth Clean Regular;
+font-size: 14px;
+color: $text-color-gray;
+	
+}
+
+.white-box .btn.focus,.white-box .btn:focus,.white-box .btn:hover {
+	
+	background-color: $color-primary;
+	border: 2px solid $color-primary;
+	color: $color-white;
+}
 
 /*	faliujsag-front*/
 
@@ -680,8 +752,37 @@ margin: 45px 0 60px 0;
 
 /*owl carusel*/
 #main-carousel {
-	border: solid $light-2-color-white 10px;
+	border: solid transparent 10px;
 	margin-top:90px;
+	background-color: $light-2-color-white;
+}
+
+#main-carousel {
+	.carousel-title{
+		position: absolute; 	
+		left: 20px;
+		bottom: 20px;
+	}
+h1, p {
+font-family: Eveleth Clean Thin, sans-serif;
+color: $color-primary;
+@include stencil;   
+background: $light-2-color-white;
+}
+p {
+	margin: 0 0 0 0;
+	font-size: 15px;
+	line-height: 31px;
+	padding: 6px 3px 2px 3px;
+	
+}
+h1{
+	font-size: 22px;
+	margin-bottom: 5px;
+	padding: 8px 3px 0px 3px;
+	line-height: 35px;
+	font-family: Eveleth Clean Regular, sans-serif;
+}
 }
 
 .owl-theme .owl-controls {
@@ -738,6 +839,115 @@ top: 20px;
 left: 15px;	
 }
 
+/*admission*/
+.thumbnail {
+	margin-bottom: 0px;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	h2 {
+font-family: Eveleth Clean Thin;
+font-size: 75px;
+color: $color-primary;
+line-height: 160px;
+border: 2px solid $light-color-gray;
+border-radius: 80px;
+text-align: center;
+width: 150px;
+height: 150px;
+vertical-align: middle;
+margin-top: 0px;
+margin-bottom: 40px;
+	}
+}
+.thumbnail .caption {
+	padding: 0;
+	color: $text-color-gray;
+	
+}
+.admission 
+
+{
+	.nav > li > a {
+		font-size: 15px;
+		color: $color-primary;
+		border-radius:0;
+		background-color: $light-2-color-white;
+		display: inline-block;
+		text-align: right;
+		padding: 9px 8px 6px 8px;
+		margin-bottom: 5px;
+		character-spacing: 1;
+		line-height: 18px;
+	-moz-transition: background .3s ease-in;
+	-o-transition: background .3s ease-in;
+	-webkit-transition: background .3s ease-in;
+	transition: background .3s ease-in;
+
+		
+	}
+	.nav-stacked {
+		text-align: right;
+	}
+		
+	.nav-stacked > li {
+    float: none;
+}	
+		
+	.nav > li  {
+	}
+	.nav > li > a > span {
+font-family: Eveleth Clean Thin;
+font-size: 12px;
+line-height: 0px;
+	}
+	.nav {
+		text-align: right;
+	}
+	.fa {
+    font-size: 37px;
+    float: right;
+    padding-left: 10px;
+}	
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: $color-secondary;
+	
+}
+}
+
+/*footer*/
+footer{
+p {
+	color: $light-4-color-white;
+	font-size:15px;
+	margin-bottom: 0px;
+	}
+	span {
+		
+		font-size:11px;
+		}
+.footer-banner {
+	height: 60px;
+	background-color: $color-primary;
+	width: 290px;
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	}
+}
+.footer-content {
+	text-align: center;
+	background-color: $fade-color-primary;
+	padding: 20px 0 15px 0;	
+	margin-bottom: 20px;
+
+}
+/*buttons*/
+.btn-center {
+text-align:center;	
+margin-top:10px;
+}
 /*social icons*/
 .social-icons {
 	text-align: center;	
@@ -756,8 +966,13 @@ left: 15px;
 	text-align: center;
 	background: transparent;
 	color: $color-white;
+		-moz-transition: background .2s ease-in;
+	-o-transition: background .2s ease-in;
+	-webkit-transition: background .2s ease-in;
+	transition: background .2s ease-in;
 	&:hover{
-	color: $color-white;
+	color: $color-primary;
+	background-color: $color-white;
 	}
 }
 .social-icons  .nav
@@ -799,10 +1014,11 @@ a {
 	 min-height: 60px;
 	 z-index: 555;
 	 position: fixed;
-	 background-color: $color-primary;
+	 background-color: $opacity-color-primary;
 	 top: 0px;
 	left: 0px;
 	width: 100%;
+	box-shadow: 0px 0px 10px 0px rgba($color-primary,0.7);
 	 }
 
 .navbar-toggle {
@@ -872,5 +1088,21 @@ a {
 	padding:0px;
 }
 
+.dropdown-menu {
+	background-color: $dark-color-gray;
+	}
+.dropdown-menu > li > a {
+	color: $mid-color-gray;
 }
+.navmenu-default .navmenu-nav > .open > a, .navbar-default .navbar-offcanvas .navmenu-nav > .open > a, .navmenu-default .navmenu-nav > .open > a:hover, .navbar-default .navbar-offcanvas .navmenu-nav > .open > a:hover, .navmenu-default .navmenu-nav > .open > a:focus, .navbar-default .navbar-offcanvas .navmenu-nav > .open > a:focus {
+	background-color: transparent;
+	color: $color-white;
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+	background-color: transparent;
+}
+
+}
+
+
 
