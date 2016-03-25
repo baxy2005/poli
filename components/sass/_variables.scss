@@ -2,6 +2,7 @@
 
 $color-primary: #E45639;
 $fade-color-primary: #E97760;
+$fade-color-2-primary: #EE9685;
 $color-secondary: #F8CF22;
 $color-tertiary: #796B9C;
 $color-black: #000000;
@@ -11,6 +12,7 @@ $color-white: #FFFFFF;
 $light-color-gray: lighten($color-black, 80% );
 $dark-color-gray: lighten($color-black, 20% );
 $mid-color-gray: lighten($color-black, 50% );
+$mid-color2-gray: lighten($color-black, 60% );
 $text-color-gray: lighten($color-black, 30% );
 
 $light-color-primary: lighten($color-primary, 10% );
@@ -20,7 +22,7 @@ $light-color-secondary: lighten($color-secondary, 10% );
 $dark-color-secondary: darken($color-secondary, 10% );
 
 $light-color-white: rgba($color-white,0.40);
-$light-2-color-white: rgba($color-white,0.82);
+$light-2-color-white: rgba($color-white,0.80);
 $light-3-color-white: rgba($color-white,0.50);
 $light-4-color-white: rgba($color-white,0.65);
 $light-5-color-white: rgba($color-white,0.20);

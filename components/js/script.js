@@ -1,10 +1,21 @@
 // JavaScript Document
+$('.custom1').owlCarousel({
+    items:1,
+    lazyLoad:false,
+    loop:true,
+	autoplay: true,
+	nav:true,
+});
+
 $('#main-carousel').owlCarousel({
+	animateOut: 'bounceOutLeft',
+    animateIn: 'flipInX',
     items:1,
     lazyLoad:true,
     loop:true,
-	autoplay: false,
+	autoplay: true,
 	nav:false,
+	margin:30,
 });
 
 $('#news-carousel').owlCarousel({
@@ -14,11 +25,31 @@ $('#news-carousel').owlCarousel({
 	autoplay: false,
 });
 $('#calendar-carousel').owlCarousel({
-    items:1,
     lazyLoad:true,
     loop:true,
 	autoplay: true,
 	nav:true,
+	 responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        440:{
+            items:2,
+            nav:false
+        },
+		        767:{
+            items:3,
+            nav:false
+        },
+
+        992:{
+            items:1,
+            nav:true,
+            loop:false
+        }
+    }
 });
 
   
@@ -85,6 +116,21 @@ $(function() {
     .setClassToggle('.form-inline-opening', 'form-inline-opening-fixed')
     .addTo(scrollMagicController);
 	
+	  var scene8 = new ScrollScene({
+    offset: 60 /* offset the trigger 150px below #scene's top */
+	
+  })
+    .setClassToggle('.secondary-nav-subpage', 'secondary-nav-top')
+    .addTo(scrollMagicController);
+	
+		 var scene9 = new ScrollScene({
+    offset: 90 /* offset the trigger 150px below #scene's top */
+	
+  })
+    .setClassToggle('.secondary-nav-subpage', 'fade-secondary-nav-bg')
+    .addTo(scrollMagicController);
+	
+	
   // Add debug indicators fixed on right side
    scene.addIndicators();
    
@@ -98,6 +144,12 @@ $(function() {
 
 
 $('.secondary-nav ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(170);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeOut(170);
+});
+
+$('.secondary-nav-subpage ul.nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(170);
 }, function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeOut(170);
