@@ -1,4 +1,5 @@
 // JavaScript Document
+
 $('.custom1').owlCarousel({
     items:1,
     lazyLoad:false,
@@ -37,11 +38,11 @@ $('#calendar-carousel').owlCarousel({
         },
         440:{
             items:2,
-            nav:false
+            nav:true
         },
 		        767:{
             items:3,
-            nav:false
+            nav:true
         },
 
         992:{
@@ -154,3 +155,14 @@ $('.secondary-nav-subpage ul.nav li.dropdown').hover(function() {
 }, function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeOut(170);
 });
+
+/*
+$('.navmenu-default ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(170);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeOut(170);
+});*/
+
+
+
+
