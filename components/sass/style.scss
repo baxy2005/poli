@@ -48,7 +48,9 @@ font-style: normal;
 @import "mixins";
 
 
-
+.scrollmagic-pin-spacer {
+	z-index: 99999;
+}
 
 .news-row {
 position:relative;	
@@ -412,6 +414,11 @@ p {
 	margin-bottom: 20px;
 
 }
+	.media {
+    margin-bottom: 20px;
+	margin-top: 0px;
+}
+
 
 @media (max-width: 767px) {
 .media {
