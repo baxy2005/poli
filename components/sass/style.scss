@@ -47,7 +47,62 @@ font-style: normal;
 @import "variables";
 @import "mixins";
 
+/*gorups*/
+.groups {
 
+	.nav-felx {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+ 	justify-content: center;
+	width: 100%;
+	height: 100%;
+	
+	}
+.nav li {
+	text-align: center;
+	width: 33.333%;
+	height: 165px;
+	margin: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: baseline;
+	-webkit-align-items: baseline;
+	    -ms-flex-align: baseline;
+	        align-items: baseline;
+ 	-webkit-box-pack: center;
+ 	-webkit-justify-content: center;
+ 	    -ms-flex-pack: center;
+ 	        justify-content: center;
+				-moz-transition: background .2s ;
+	-o-transition: background .2s ;
+	-webkit-transition: background .2s ;
+	transition: background .2s ;
+
+}.nav > li:focus, .nav > li:hover {
+    text-decoration: none;
+    background-color: $color-white;
+	cursor: pointer; cursor: hand;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+.nav li a {
+	font-family: ProximaNova-Regular, sans-serif;
+	font-size: 18px;
+	text-align: center;
+	height: 100%;
+
+}
+.nav li a img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+}
 .scrollmagic-pin-spacer {
 	z-index: 99999;
 }
@@ -1565,6 +1620,10 @@ margin-right: -15px;
 
 
 @media (max-width: 479px) {
+	
+.groups .nav li {
+width: 100%;	
+}
 	
 		.carousel-title {
 	display: none;	
