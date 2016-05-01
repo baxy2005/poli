@@ -47,6 +47,20 @@ font-style: normal;
 @import "variables";
 @import "mixins";
 
+/*artwork*/
+
+/*.artwork {
+	width: 100%;
+	
+.nav {
+		text-align: left;
+	}	
+	
+	.nav > li > a { 
+	text-align: left;
+	}
+}*/
+
 /*gorups*/
 .groups {
 
@@ -92,9 +106,10 @@ font-style: normal;
 }
 .nav li a {
 	font-family: ProximaNova-Regular, sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	text-align: center;
 	height: 100%;
+	line-height: 120%;
 
 }
 .nav li a img {
@@ -360,6 +375,7 @@ border-bottom: solid 1px $mid-color2-gray;
 padding-bottom: 10px;
 margin-bottom: 0;
 margin-top: 25px;
+color: $text-color-gray !important; 
 }
 .news-sidebar {
  .nav > li   {
@@ -523,7 +539,15 @@ footer .footer-content {
 	margin-top: 0px;
 	padding:0px;
 	text-align: left;
+	-moz-transition: background .2s ;
+	-o-transition: background .2s ;
+	-webkit-transition: background .2s ;
+	transition: background .2s ;
+
 }
+	/*.media:hover {
+		background: $color-white;
+}*/
 	
 	.form-inline-opening {
 		
@@ -856,6 +880,9 @@ margin-right: 10px;
 	h3 {
 	margin-top: 10px;	
 	}
+	.news-row h4 {
+		font-size: 20px;
+	}
 	label {
 	color: $light-4-color-white;	
 	font-weight: normal;
@@ -948,7 +975,7 @@ blockquote{
 
 .media-heading {
 		color: $color-primary;
-		font-size: 20px;
+		font-size: 20px !important;
 }
 
 .media-left, .media > .pull-left {
@@ -1313,6 +1340,115 @@ left: 15px;
 	background-image:  url(../images/poli-carousel-arrow-right.svg);
 }
 
+/*artwork carousel*/
+
+.artwork {
+	text-align: center;
+	@media (max-width: 991px) {
+	margin-top:30px;
+}
+		
+	
+	.btn{
+padding: 10px 20px 6px 20px;	
+border: 2px solid $light-2-color-white;
+border-radius: 0;
+background-color: transparent;
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+
+}
+
+.btn-default {
+font-family: Eveleth Clean Regular;
+font-size: 14px;
+color: $color-white;
+margin-top: 10px;
+	
+		@media (max-width: 479px) {
+	width: 100%;
+}
+
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+	
+	background-color: $color-white;
+	border: 2px solid $color-white;
+	color: $color-primary;
+}
+	
+	.owl-theme .owl-controls {
+	position: inherit !important;
+	text-align: center !important;
+	left: auto ;
+	top: auto ;
+	margin-top: -10px;
+}
+
+ .owl-theme .owl-controls  .owl-prev, .owl-theme .owl-controls .owl-next {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	text-indent: -3000px;
+	background: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 80px;
+	margin:2px;
+	border: solid 2px $light-2-color-white;
+}
+
+ .owl-theme .owl-controls .owl-prev a {
+	background: $dark-color-gray !important;
+}
+ .owl-theme .owl-controls  .owl-prev {
+	background-image:  url(../images/poli-carousel-arrow-left.svg);
+}
+ .owl-theme .owl-controls  .owl-next {
+	background-image:  url(../images/poli-carousel-arrow-right.svg);
+}
+
+.owl-theme .owl-controls .owl-nav [class*="owl-"]:hover {
+    background-color: #869791 !important;
+    color: #fff; 
+    text-decoration: none;
+}
+.owl-theme .owl-controls .owl-dots { 
+display: none !important;
+}
+
+}
+
+
+.owl-artwork {
+	
+	.owl-item {
+		text-align: center;
+		margin: 10px 0;
+		
+	}
+	
+.item {
+	img {
+	border: solid 6px $light-2-color-white;	
+	margin: 0px 0 10px 0;
+	@media (max-width: 467px) {
+/*		width: 160px;
+		height: 160px;
+*/}
+	@media (max-width: 991px) {
+	margin: 0 10px 10px 10px;
+/*			width: 160px;
+		height: 160px;
+*/
+}
+
+	}
+}
+}
 
 /*admission*/
 .thumbnail {
@@ -1401,7 +1537,31 @@ line-height: 0px;
 	display: block;
 }
 }
+/*artwork*/
 
+.artwork {
+	width: 200px;
+	@media (max-width: 991px) {
+		width: 100%;
+
+}
+
+	
+.nav {
+		text-align: left;
+	}	
+	.nav > li {
+	width: 100%	
+	}
+	
+	.nav > li > a { 
+	text-align: left;
+	@media (max-width: 991px) {
+		width: 100% !important;
+
+}
+	}
+}
 
 /*buttons*/
 .btn-center {

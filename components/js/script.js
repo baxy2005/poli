@@ -51,6 +51,33 @@ $('#calendar-carousel').owlCarousel({
     }
 });
 
+$('.owl-artwork').owlCarousel({
+    loop:true,
+	autoplay: false,
+	nav:true,
+	 responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        440:{
+            items:1,
+            nav:true
+        },
+		        767:{
+            items:1,
+            nav:true
+        },
+
+        992:{
+            items:1,
+            nav:true,
+            loop:false
+        }
+    }
+});
+
   
 $(function() {
   
