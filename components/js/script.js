@@ -7,12 +7,12 @@ $('.custom1').owlCarousel({
 });
 
 $('#main-carousel').owlCarousel({
-	animateOut: 'bounceOutLeft',
-    animateIn: 'flipInX',
+	animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
     items:1,
     lazyLoad:true,
     loop:true,
-	autoplay: true,
+	autoplay: false,
 	nav:false,
 	margin:30,
 });
@@ -123,16 +123,16 @@ $(function() {
 	
 	
 	
-	//var tween = TweenMax.from('.brand-on', 0.2, {
-//    opacity: 0,
-//  });
-//		 var scene7 = new ScrollScene({
-//			  triggerElement: '#brand-switch',
-//			   offset: -15
-//	
-//  })
-//    .setTween(tween)
-//    .addTo(scrollMagicController);
+	var tween = TweenMax.from('.brand-on', 0.2, {
+    opacity: 0,
+  });
+		 var scene7 = new ScrollScene({
+			  triggerElement: 'brand-on',
+			   offset: 433
+	
+  })
+    .setTween(tween)
+    .addTo(scrollMagicController);
 	
 	
 	 var scene4 = new ScrollScene({

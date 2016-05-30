@@ -1,5 +1,32 @@
 /* Scss Document */
 
+
+@font-face {
+    font-family: 'evelethclean_regular';
+    src: url('../fonts/yellow_design_studio_-_eveleth_clean_regular-webfont.eot');
+    src: url('../fonts/yellow_design_studio_-_eveleth_clean_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/yellow_design_studio_-_eveleth_clean_regular-webfont.woff2') format('woff2'),
+         url('../fonts/yellow_design_studio_-_eveleth_clean_regular-webfont.woff') format('woff'),
+         url('../fonts/yellow_design_studio_-_eveleth_clean_regular-webfont.ttf') format('truetype'),
+         url('../fonts/yellow_design_studio_-_eveleth_clean_regular-webfont.svg#evelethclean_regular') format('svg');
+    font-weight: normal;
+    font-style: 400;
+
+}
+
+@font-face {
+    font-family: 'evelethclean_thin';
+    src: url('../fonts/yellow_design_studio_-_eveleth_clean_thin-webfont.eot');
+    src: url('../fonts/yellow_design_studio_-_eveleth_clean_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/yellow_design_studio_-_eveleth_clean_thin-webfont.woff2') format('woff2'),
+         url('../fonts/yellow_design_studio_-_eveleth_clean_thin-webfont.woff') format('woff'),
+         url('../fonts/yellow_design_studio_-_eveleth_clean_thin-webfont.ttf') format('truetype'),
+         url('../fonts/yellow_design_studio_-_eveleth_clean_thin-webfont.svg#evelethclean_thin') format('svg');
+    font-weight: normal;
+    font-style: 200;
+
+}
+
 @font-face {
   font-family: 'Eveleth Clean Regular';
   src: url('../fonts/Yellow Design Studio - Eveleth Clean Regular.eot'); /* IE9 Compat Modes */
@@ -60,7 +87,11 @@ font-style: normal;
 	text-align: left;
 	}
 }*/
-
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 /*gorups*/
 .groups {
 
@@ -105,7 +136,7 @@ font-style: normal;
     background-color: transparent;
 }
 .nav li a {
-	font-family: ProximaNova-Regular, sans-serif;
+	font-family: $font-secondary;
 	font-size: 20px;
 	text-align: center;
 	height: 100%;
@@ -193,7 +224,9 @@ a:focus, a:hover {
 
 body{
 	background: $color-primary;
-	font-family: ProximaNova-Regular, sans-serif;
+	font-family: $font-secondary;
+	font-weight: 500;
+	font-style: normal;
 	font-size: 14px;
 	color: $text-color-gray;
 	line-height: 22px;
@@ -226,7 +259,7 @@ body{
 	width: 166px;
 	z-index: 55;
 	padding: 0px;
-	font-family: Eveleth Clean Regular, sans-serif;
+	font-family: $font-primary;
 	font-size: 14px;
 	color: $color-primary;
 	letter-spacing: 1px;
@@ -332,7 +365,7 @@ body{
     display: block;
     padding: 14px 15px 10px 15px;
     font-size: 16px;
-	font-family: Eveleth Clean Regular, sans-serif;
+	font-family: $font-primary;
 }
 .navmenu-default .navmenu-nav > li > a, .navbar-default .navbar-offcanvas .navmenu-nav > li > a {
     color: $light-3-color-white;
@@ -369,7 +402,7 @@ body{
 }
 
 .news-sidebar h5 {
-font-family: ProximaNova-Regular, sans-serif;
+font-family: $font-secondary;
 font-size: 18px;
 border-bottom: solid 1px $mid-color2-gray;
 padding-bottom: 10px;
@@ -387,7 +420,7 @@ color: $text-color-gray !important;
     display: block;
     padding: 9px 0 10px 0;
     font-size: 13px;
-    font-family: ProximaNova-Regular, sans-serif;
+    font-family: $font-secondary;
 	color: $color-primary;
 	line-height: 120%;
 }
@@ -765,7 +798,7 @@ display: block;
 }
 .navmenu-default .nav > li > a {
 	font-size: 14px;	
-	padding: 8px 0 5px 0;
+	padding: 7px 0 6px 0;
 	letter-spacing: 0.31px;
 	color:$color-white !important;
 }
@@ -777,6 +810,7 @@ color: $color-white;
 }
 .glyphicon-plus {
 	color: $light-color-white;
+	top: 3px;
 }
 .dropdown {
 	border-bottom: 1px solid  $light-color-white;
@@ -850,7 +884,7 @@ background-color: $color-primary;
 	}
  li > a {
     font-size: 14px;
-    font-family: ProximaNova-Regular, sans-serif;
+    font-family: $font-secondary;
 	color: $color-primary;
 	line-height: 120%;
 	padding:0;
@@ -952,23 +986,36 @@ blockquote{
 	float: right;
 
  p {
-    font-family: Eveleth Clean Thin, sans-serif;
+    font-family: $font-primary-thin;
     color: $color-white;
-    line-height: 31px;
+    line-height: 29px;
     font-size: 15px;
     background: $fade-color-2-primary;
 	@include stencil;    
-	padding: 6px 0 2px 0;
+	padding: 3px 0 0 0;
 	box-shadow: 5px 0px 0px $fade-color-2-primary, -5px 0px 0px $fade-color-2-primary;
     margin: 0px;
  }
  span {
-	 font-family: Eveleth Clean Regular, sans-serif !important;
+	 font-family: $font-primary !important;
+	 line-height: 27px;
 
  }
 }
 
 
+}
+
+.white-box.white-box-main-content {
+	h1 {
+		line-height: 38.8px;
+		background-color: transparent;
+		background-image: url(../images/poli-h1-bg.png);
+		padding: 4px 0 0 0;
+		margin-top: -9px;
+		display: block;
+		height:auto;
+	}
 }
 
 /*opening page*/
@@ -999,30 +1046,31 @@ blockquote{
 	padding-left: 5px;
 
  p {
-    font-family: Eveleth Clean Thin, sans-serif;
+    font-family: $font-primary-thin;
     color: rgb(228, 86, 57);
-    line-height: 31px;
+    line-height: 29px;
     font-size: 15px;
     background: $light-2-color-white;
 	@include stencil;    
-	padding: 6px 0 2px 0;
+	padding: 3px 0 0 0;
 	box-shadow: 5px 0px 0px $light-2-color-white, -5px 0px 0px $light-2-color-white;
     margin: 0px;
  }
  span {
-	 font-family: Eveleth Clean Regular, sans-serif !important;
+	 font-family: $font-primary !important;
+	 line-height: 27px;
 
  }
 }
 
 .brand {
-	font-family: Eveleth Clean Regular, sans-serif;
+	font-family: $font-primary;
 	font-size: 54px;
 	color: $color-white;
 	letter-spacing: 10px;
-	line-height: 54px;
+	line-height: 68px;
 	margin-bottom: 0px;
-	margin-top: 36px;
+	margin-top: 22px;
 	margin-left: -2px;
 }
 .full-brand {
@@ -1038,28 +1086,28 @@ blockquote{
 	 }
 	 
 	 h4 {
-		 	font-family: Eveleth Clean Thin, sans-serif;
+		 	font-family: $font-primary-thin;
 			font-size: 16px;
 			color: $color-primary;
-			line-height: 28px;	
+			line-height: 165%;	
 			background-color: $color-white; 
 			@include stencil;
-			padding-top: 6px;
+			padding-top: 2px;
 			box-shadow: 5px 0px 0px $color-white, -5px 0px 0px $color-white;
 			
 				span {
-					font-family: Eveleth Clean Regular, sans-serif;
+					font-family: $font-primary;
 				}
 			}
 	.small	{
-			font-family: Eveleth Clean Thin, sans-serif;
+			font-family: $font-primary-thin;
 			font-size: 11px;
 			color: $color-primary;
-			line-height: 22px;	
+			line-height: 165%;	
 			background-color: $color-secondary; 
 			@include stencil;
 			box-shadow: 5px 0px 0px $color-secondary, -5px 0px 0px $color-secondary;
-			padding-top: 6px;
+			padding-top: 3px;
 			padding-bottom: 2px;
 			
 	}
@@ -1070,6 +1118,8 @@ blockquote{
 			line-height: 1.6;
 			margin-bottom: 0px;
 			margin-left: -4px;
+			font-weight: 100;
+			letter-spacing: .1px;
 			a {
 			color: $color-white;	
 			}
@@ -1135,21 +1185,25 @@ background-color: $light-2-color-white;
 padding: 30px;
 	h1 {
 			margin-top: 0;
-			font-family: Eveleth Clean Regular, sans-serif;
+			font-family: evelethclean_regular, sans-serif;
 			font-size: 28px;
 			color: $color-primary;
-			line-height: 16px;
-			padding: 11px 0px 3px 0px;
+			padding: 0px;
 			background-color: #F8CF22;
 			display: block;
 			box-decoration-break: clone;
 			margin-bottom: 40px;
 			text-align: center;
+			height: 30px;
+			padding-top: 0;
+			display: flex;
+			align-items: baseline;
+			justify-content: center;
 		span {
-		font-family: Eveleth Clean Regular, sans-serif;
+		font-family: $font-primary;
 		}
 		.light-font{
-			font-family: Eveleth Clean Thin, sans-serif !important;
+			font-family: $font-primary-thin !important;
 	}
 
 	}
@@ -1260,7 +1314,7 @@ margin: 45px 0 60px 0;
 	margin-right: 30px;
 	}
 h1, p {
-font-family: Eveleth Clean Thin, sans-serif;
+font-family: $font-primary-thin;
 color: $color-primary;
 @include stencil;   
 background: $light-2-color-white;
@@ -1268,16 +1322,16 @@ background: $light-2-color-white;
 p {
 	margin: 0 0 0 0;
 	font-size: 15px;
-	line-height: 31px;
-	padding: 6px 3px 2px 3px;
+	line-height: 2.2;
+	padding: 3px 3px 2px 3px;
 	
 }
 h1{
 	font-size: 22px;
 	margin-bottom: 5px;
-	padding: 8px 3px 0px 3px;
-	line-height: 35px;
-	font-family: Eveleth Clean Regular, sans-serif;
+	padding: 3px 3px 0px 3px;
+	line-height: 1.8;
+	font-family: $font-primary;
 }
 }
 
@@ -1637,7 +1691,7 @@ a {
 	
 	.brand {
 	font-size: 40px;
-	top: 10px;
+	top: 4px;
 	margin-top: 0px;
 	left: 60px;
 	line-height: 50px;
