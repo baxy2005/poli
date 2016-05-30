@@ -546,7 +546,7 @@ footer .footer-banner {
 /* line 514, ../components/sass/style.scss */
 .footer-content {
   text-align: center;
-  background-color: #e97760;
+  background-color: #e97861;
   padding: 20px 0 15px 0;
   margin-bottom: 20px;
 }
@@ -981,7 +981,7 @@ footer .footer-banner {
 
 /* line 904, ../components/sass/style.scss */
 .white-box form {
-  background-color: #ee9988;
+  background-color: #ef9a88;
   padding: 15px;
   margin-top: 40px;
 }
@@ -1040,7 +1040,7 @@ footer .footer-banner {
 /* line 950, ../components/sass/style.scss */
 .white-box form .form-control:focus {
   box-shadow: 0px 2px 8px 0px #E45639;
-  background: #fbe790;
+  background: #fce791;
 }
 /* line 956, ../components/sass/style.scss */
 .white-box p {
@@ -1082,14 +1082,14 @@ footer .footer-banner {
   color: #FFFFFF;
   line-height: 29px;
   font-size: 15px;
-  background: #ee9988;
+  background: #ef9a88;
   display: inline;
   padding: 0px;
   box-shadow: 5px 0px 0px rgba(255, 255, 255, 0.8), -5px 0px 0px rgba(255, 255, 255, 0.8);
   font-weight: normal;
   box-decoration-break: clone;
   padding: 3px 0 0 0;
-  box-shadow: 5px 0px 0px #ee9988, -5px 0px 0px #ee9988;
+  box-shadow: 5px 0px 0px #ef9a88, -5px 0px 0px #ef9a88;
   margin: 0px;
 }
 /* line 999, ../components/sass/style.scss */
@@ -2109,4 +2109,168 @@ li a:hover {
     bottom: 0;
     width: 89.7%;
   }
+}
+/* see https://codex.wordpress.org/CSS */
+/* =WordPress Core
+-------------------------------------------------------------- */
+/* Begin Images */
+/* line 2039, ../components/sass/style.scss */
+p img {
+  padding: 0;
+  max-width: 100%;
+}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+/* line 2049, ../components/sass/style.scss */
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 2055, ../components/sass/style.scss */
+img.alignright {
+  padding: 4px;
+  margin: 0 0 2px 7px;
+  display: inline;
+}
+
+/* line 2061, ../components/sass/style.scss */
+img.alignleft {
+  padding: 4px;
+  margin: 0 7px 2px 0;
+  display: inline;
+}
+
+/* line 2067, ../components/sass/style.scss */
+.alignright {
+  float: right;
+}
+
+/* line 2071, ../components/sass/style.scss */
+.alignleft {
+  float: left;
+}
+
+/* End Images */
+/* Captions */
+/* line 2078, ../components/sass/style.scss */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 2085, ../components/sass/style.scss */
+.wp-caption {
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: #f3f3f3;
+  padding-top: 4px;
+  margin: 10px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 2097, ../components/sass/style.scss */
+.wp-caption img {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+
+/* line 2103, ../components/sass/style.scss */
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  padding: 0 4px 5px;
+  margin: 0;
+}
+
+/* End captions */
+/* line 2113, ../components/sass/style.scss */
+.white-box.white-box-main-content h1 {
+  line-height: 38.2px;
+  background-color: transparent;
+  background-image: url(../images/poli-h1-bg.png);
+  padding: 9px 0px 0px 0px;
+}
+
+/* line 2120, ../components/sass/style.scss */
+.white-box h1 {
+  margin-top: 0;
+  font-family: Eveleth Clean Regular, sans-serif;
+  font-size: 28px;
+  color: #E45639;
+  line-height: 16px;
+  padding: 11px 0px 3px 0px;
+  background-color: #F8CF22;
+  display: block;
+  box-decoration-break: clone;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* line 2134, ../components/sass/style.scss */
+.comments {
+  float: none;
+  clear: both;
+  background-color: #ef9a88;
+}
+/* line 2138, ../components/sass/style.scss */
+.comments .logged-in-as a {
+  color: white;
+}
+/* line 2142, ../components/sass/style.scss */
+.comments .comment-reply-title {
+  display: none;
+}
+
+/* line 2147, ../components/sass/style.scss */
+.responses {
+  padding: 15px;
+}
+
+/* line 2151, ../components/sass/style.scss */
+.blog-comment {
+  background-color: #FFFFFF;
+  padding: 15px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
+  margin-bottom: 15px;
+}
+
+/* line 2158, ../components/sass/style.scss */
+.blog-comment:last-child {
+  margin-bottom: 0px;
+}
+
+/* line 2162, ../components/sass/style.scss */
+.comment-author {
+  font-size: 18px;
+}
+
+/* line 2166, ../components/sass/style.scss */
+.commentform {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/* line 2171, ../components/sass/style.scss */
+.reply-title {
+  margin-left: 15px;
+  color: #FFF;
+  border-bottom: 1px solid #FFF;
+  margin-right: 15px;
+  padding-bottom: 5px;
+}
+
+/* line 2179, ../components/sass/style.scss */
+.comment-content p {
+  margin-bottom: 5px;
 }
