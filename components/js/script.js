@@ -123,16 +123,16 @@ $(function() {
 	
 	
 	
-	var tween = TweenMax.from('.brand-on', 0.2, {
-    opacity: 0,
-  });
-		 var scene7 = new ScrollScene({
-			  triggerElement: 'brand-on',
-			   offset: 433
-	
-  })
-    .setTween(tween)
-    .addTo(scrollMagicController);
+	//var tween = TweenMax.from('.brand-on', 0.2, {
+//    opacity: 0,
+//  });
+//		 var scene7 = new ScrollScene({
+//			  triggerElement: 'brand-on',
+//			   offset: 433
+//	
+//  })
+//    .setTween(tween)
+//    .addTo(scrollMagicController);
 	
 	
 	 var scene4 = new ScrollScene({
@@ -189,5 +189,20 @@ $('.navmenu-default ul.nav li.dropdown').hover(function() {
 });*/
 
 
+ // Adds and removes body class depending on screen width.
+  function screenClass() {
+    if($(window).innerHeight() < 735) {
+      $('.brand-on').addClass('brand-off');
+    } else {
+      $('.brand-on').removeClass('brand-off');
+    }
+  }
 
+  // Fire.
+  screenClass();
+
+  // And recheck if window gets resized.
+  $(window).bind('resize',function(){
+    screenClass();
+  });
 
