@@ -27,48 +27,15 @@
 
 }
 
-@font-face {
-  font-family: 'Eveleth Clean Regular';
-  src: url('../fonts/Yellow Design Studio - Eveleth Clean Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Yellow Design Studio - Eveleth Clean Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/Yellow Design Studio - Eveleth Clean Regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/Yellow Design Studio - Eveleth Clean Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/Yellow Design Studio - Eveleth Clean Regular.svg#f2c8a791757bdb5d5a7102cbeb599b7e') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  400;
-}
+@import url("//hello.myfonts.net/count/3138fd");
 
-@font-face {
-  font-family: 'Eveleth Clean Thin';
-  src: url('../fonts/Yellow Design Studio - Eveleth Clean Thin.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Yellow Design Studio - Eveleth Clean Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/Yellow Design Studio - Eveleth Clean Thin.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/Yellow Design Studio - Eveleth Clean Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/Yellow Design Studio - Eveleth Clean Thin.svg#a2d741f0132f9d79f9f06880bf20be40') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  200;
-}
+@font-face {font-family: 'ProximaNova-Medium';
+src: url('../fonts/3138FD_2_0.eot');
+src: url('../fonts/3138FD_2_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/3138FD_2_0.woff2') format('woff2'),url('../fonts/3138FD_2_0.woff') format('woff'),
+		url('../fonts/3138FD_2_0.ttf') format('truetype');}
 
-@font-face {
-  font-family: 'ProximaNova-Regular';
-  src: url('../fonts/ProximaNova-Regular.eot'),
-       url('../fonts/ProximaNova-Regular.woff') format('woff'),
-       url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
-       url('../fonts/ProximaNova-Regular.svg#webfont') format('svg');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-  font-family: 'ProximaNova-Bold';
-  src: url('../fonts/ProximaNova-Bold.eot'),
-       url('../fonts/ProximaNova-Bold.woff') format('woff'),
-       url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
-       url('../fonts/ProximaNova-Bold.svg#webfont') format('svg');
-font-weight: normal;
-font-style: normal;
-}
+
 
 @import "compass/css3";
 @import "variables";
@@ -2109,27 +2076,6 @@ div.aligncenter {
 /* End captions */
 
 
-
-.white-box.white-box-main-content h1 {
-	line-height: 38.2px;
-	background-color: transparent;
-	background-image: url(../images/poli-h1-bg.png);
-	padding: 9px 0px 0px 0px;
-}
-
-.white-box h1 {
-	margin-top: 0;
-	font-family: Eveleth Clean Regular, sans-serif;
-	font-size: 28px;
-	color: #E45639;
-	line-height: 16px;
-	padding: 11px 0px 3px 0px;
-	background-color: #F8CF22;
-	display: block;
-	box-decoration-break: clone;
-	margin-bottom: 40px;
-	text-align: center;
-}
 
 .comments {
 	float: none;
