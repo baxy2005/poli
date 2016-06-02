@@ -852,6 +852,10 @@ background-color: $color-primary;
 	li  {
 		margin-right: 20px;
 	}
+		li:last-child  {
+		margin-right: 0;
+	}
+
  li > a {
     font-size: 14px;
     font-family: $font-secondary;
@@ -982,7 +986,7 @@ blockquote{
 		background-color: transparent;
 		background-image: url(../images/poli-h1-bg.png);
 		padding: 4px 0 0 0;
-		margin-top: -9px;
+		margin-top: -5px;
 		display: block;
 		height:auto;
 	}
@@ -1018,7 +1022,7 @@ blockquote{
  p {
     font-family: $font-primary-thin;
     color: rgb(228, 86, 57);
-    line-height: 29px;
+    line-height: 30px;
     font-size: 15px;
     background: $light-2-color-white;
 	@include stencil;    
@@ -1152,7 +1156,10 @@ main, .container {
 	}
 .white-box{
 background-color: $light-2-color-white;
-padding: 30px;
+	padding: 15px;
+@media (min-width: 992px) {
+	padding: 30px;
+}
 	h1 {
 			margin-top: 0;
 			font-family: evelethclean_regular, sans-serif;
@@ -1171,6 +1178,7 @@ padding: 30px;
 			justify-content: center;
 		span {
 		font-family: $font-primary;
+		margin-left: 10px;
 		}
 		.light-font{
 			font-family: $font-primary-thin !important;
@@ -1527,8 +1535,9 @@ margin-right: auto;
 	-o-transition: background .3s ease-in;
 	-webkit-transition: background .3s ease-in;
 	transition: background .3s ease-in;
-
-	
+	}
+	.col-lg-6:first-child .thumbnail h2 {
+		margin-top: 0px
 	}
 	.media-heading {
 		margin-bottom: 15px;
@@ -1859,6 +1868,7 @@ width: 100%;
 	
 	.white-box .thumbnail h2 {
 	margin-top: 40px;	
+	margin-bottom: 20px;
 	}
 	
 	.news-sidebar h5:first-child {
@@ -1874,7 +1884,13 @@ float: none;
 
 }
 	
+.pull-right {
+float: left !important;
+}
 
+.content-info li {
+margin-bottom: 5px;	
+}
 
 }
 
@@ -2152,6 +2168,9 @@ div.aligncenter {
 		height: auto;
 		
 }
+.white-box .bulletin-board h1 span{
+	margin-left: 0px;
+}
 .white-box .bulletin-board h1 span:first-child {
 	display: inline;	
 }
@@ -2167,9 +2186,126 @@ comment form
 #comments {
 	clear: both;
 }
+h2#comments {
+	margin: 15px;
+	padding-top: 15px;
+	color: $color-white;
+	border-bottom: 1px solid $color-white;
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+
+}
+.comment-navigation {
+	margin: 15px;
+}
+.nav-previous a, nav-next a {
+border: 2px solid $light-color-white;
+font-family: evelethclean_regular,sans-serif;
+font-size: 14px;
+padding: 8px 20px;
+color: $color-white;
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+	display: block;
+	text-align: center;
+@media (min-width: 992px) {	
+	display: inline-block;
+}
+}
+
+.nav-previous a:hover, nav-next a:hover {
+border: 2px solid $color-primary;
+font-family: evelethclean_regular,sans-serif;
+font-size: 14px;
+padding: 8px 20px;
+color: $color-white;
+background-color: $color-primary;
+text-decoration: none;
+
+}
 
 
-.comment-form {
+.comment-author {
+	 margin-bottom: 2px;
+	 margin-top: 0;
+}
+h5.comment-date {
+	color: $mid-color-gray;
+	margin-top: 0px;
+}
+.comment-content p:last-child {
+	margin-bottom: 0;	
+}
+
+#commentform small {
+	font-size: 14px;
+}
+
+#commentform .form-control {
+	margin-bottom: 10px;
+}
+
+#commentform {
+	display: flex;
+	flex-flow: column wrap;
+	margin-top: 0px;
+	padding-top: 0px;
+	height: auto;
+	@media (min-width: 768px) {	
+	height: 310px;
+	}
+	@media (min-width: 1200px) {
+	height: 288px;
+	}
+}
+
+h2.reply-title {
+	color: $color-white;
+	font-size: 18px;
+	padding-top: 20px;
+}
+
+#commentform p {
+	width: 100%;
+	margin-bottom: 0px;
+		@media (min-width: 768px) {
+		width: 50%;
+	}
+}
+
+#commentform p:nth-of-type(1), #commentform p:nth-of-type(2), #commentform p:nth-of-type(3) {
+	padding-right: 0px;
+			@media (min-width: 768px) {
+		padding-right: 10px;
+	}
+}
+
+#commentform p:nth-of-type(4), #commentform p:nth-of-type(5){
+	padding-left: 0px;
+				@media (min-width: 768px) {
+		padding-left: 10px;
+	}
+}
+
+#commentform p:nth-of-type(5){
+	text-align: right;
+	margin-top: 20px;
+}
+
+textarea#comment.form-control {
+		height: 150px;
+				@media (min-width: 768px) {
+		height: 198px;
+	}
+		@media (min-width: 1200px) {
+	height: 176px;
+	}
+
+}
+
+/*.comment-form {
 	display: flex;
 	justify-content: space-between;
 	flex-flow: row wrap;
@@ -2191,3 +2327,4 @@ form-submit {
 	order: 9;
 }
 }
+*/
