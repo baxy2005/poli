@@ -527,7 +527,7 @@ footer .footer-banner {
 /* line 483, ../components/sass/style.scss */
 .footer-content {
   text-align: center;
-  background-color: #e97760;
+  background-color: #e97861;
   padding: 20px 0 15px 0;
   margin-bottom: 20px;
 }
@@ -962,7 +962,7 @@ footer .footer-banner {
 
 /* line 874, ../components/sass/style.scss */
 .white-box form {
-  background-color: #ee9988;
+  background-color: #ef9a88;
   padding: 15px;
   margin-top: 40px;
 }
@@ -1021,7 +1021,7 @@ footer .footer-banner {
 /* line 920, ../components/sass/style.scss */
 .white-box form .form-control:focus {
   box-shadow: 0px 2px 8px 0px #E45639;
-  background: #fbe790;
+  background: #fce791;
 }
 /* line 926, ../components/sass/style.scss */
 .white-box p {
@@ -1063,14 +1063,14 @@ footer .footer-banner {
   color: #FFFFFF;
   line-height: 29px;
   font-size: 15px;
-  background: #ee9988;
+  background: #ef9a88;
   display: inline;
   padding: 0px;
   box-shadow: 5px 0px 0px rgba(255, 255, 255, 0.8), -5px 0px 0px rgba(255, 255, 255, 0.8);
   font-weight: normal;
   box-decoration-break: clone;
   padding: 3px 0 0 0;
-  box-shadow: 5px 0px 0px #ee9988, -5px 0px 0px #ee9988;
+  box-shadow: 5px 0px 0px #ef9a88, -5px 0px 0px #ef9a88;
   margin: 0px;
 }
 /* line 969, ../components/sass/style.scss */
@@ -2271,26 +2271,31 @@ div.aligncenter {
 comment form
 -------------------------------------------*/
 /* line 2167, ../components/sass/style.scss */
+#comments {
+  clear: both;
+}
+
+/* line 2172, ../components/sass/style.scss */
 .comment-form {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
 }
-/* line 2172, ../components/sass/style.scss */
+/* line 2177, ../components/sass/style.scss */
 .comment-form .form-group {
   margin-bottom: 15px;
   flex: 0 1 calc(50% - .2em);
 }
-/* line 2177, ../components/sass/style.scss */
+/* line 2182, ../components/sass/style.scss */
 .comment-form form-submit {
   order: 14;
   flex: 0 1 100%;
 }
-/* line 2181, ../components/sass/style.scss */
+/* line 2186, ../components/sass/style.scss */
 .comment-form .comment-notes {
   order: 10;
 }
-/* line 2184, ../components/sass/style.scss */
+/* line 2189, ../components/sass/style.scss */
 .comment-form .comment-form-comment {
   flex: 0 1 100%;
   order: 9;

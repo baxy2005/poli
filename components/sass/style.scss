@@ -2163,7 +2163,12 @@ div.aligncenter {
 
 /*-------------------------------------------
 comment form
--------------------------------------------*/	
+-------------------------------------------*/
+#comments {
+	clear: both;
+}
+
+
 .comment-form {
 	display: flex;
 	justify-content: space-between;
