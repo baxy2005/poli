@@ -2033,6 +2033,7 @@ margin-bottom: 5px;
 p img {
 	padding: 0;
 	max-width: 100%;
+	width: auto;
 }
 
 /*	Using 'class="alignright"' on an image will (who would've
@@ -2183,7 +2184,7 @@ div.aligncenter {
 /*-------------------------------------------
 comment form
 -------------------------------------------*/
-#comments {
+#comments, #respond  {
 	clear: both;
 }
 h2#comments {
@@ -2304,6 +2305,26 @@ textarea#comment.form-control {
 	}
 
 }
+#respond {
+	background-color: $fade-color-2-primary;
+}
+
+.logged-in #commentform {
+	flex-flow: row wrap;
+	height: auto;
+	
+	p {
+		width: 100%;
+	}
+	p:nth-of-type(3) {
+		text-align: right;
+		margin: 15px 0 10px 0;
+	}
+	.btn {
+	white-space: normal;	
+	}
+}
+
 
 /*.comment-form {
 	display: flex;

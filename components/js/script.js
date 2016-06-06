@@ -12,7 +12,7 @@ $('#main-carousel').owlCarousel({
     items:1,
     lazyLoad:true,
     loop:true,
-	autoplay: false,
+	autoplay: true,
 	nav:false,
 	margin:30,
 });

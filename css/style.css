@@ -2132,46 +2132,47 @@ li a:hover {
 p img {
   padding: 0;
   max-width: 100%;
+  width: auto;
 }
 
 /*	Using 'class="alignright"' on an image will (who would've
 	thought?!) align the image to the right. And using 'class="centered',
 	will of course center the image. This is much better than using
 	align="center", being much more futureproof (and valid) */
-/* line 2043, ../components/sass/style.scss */
+/* line 2044, ../components/sass/style.scss */
 img.centered {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 2049, ../components/sass/style.scss */
+/* line 2050, ../components/sass/style.scss */
 img.alignright {
   padding: 4px;
   margin: 0 0 2px 7px;
   display: inline;
 }
 
-/* line 2055, ../components/sass/style.scss */
+/* line 2056, ../components/sass/style.scss */
 img.alignleft {
   padding: 4px;
   margin: 0 7px 2px 0;
   display: inline;
 }
 
-/* line 2061, ../components/sass/style.scss */
+/* line 2062, ../components/sass/style.scss */
 .alignright {
   float: right;
 }
 
-/* line 2065, ../components/sass/style.scss */
+/* line 2066, ../components/sass/style.scss */
 .alignleft {
   float: left;
 }
 
 /* End Images */
 /* Captions */
-/* line 2072, ../components/sass/style.scss */
+/* line 2073, ../components/sass/style.scss */
 .aligncenter,
 div.aligncenter {
   display: block;
@@ -2179,7 +2180,7 @@ div.aligncenter {
   margin-right: auto;
 }
 
-/* line 2079, ../components/sass/style.scss */
+/* line 2080, ../components/sass/style.scss */
 .wp-caption {
   border: 1px solid #ddd;
   text-align: center;
@@ -2192,14 +2193,14 @@ div.aligncenter {
   border-radius: 3px;
 }
 
-/* line 2091, ../components/sass/style.scss */
+/* line 2092, ../components/sass/style.scss */
 .wp-caption img {
   margin: 0;
   padding: 0;
   border: 0 none;
 }
 
-/* line 2097, ../components/sass/style.scss */
+/* line 2098, ../components/sass/style.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -2208,27 +2209,27 @@ div.aligncenter {
 }
 
 /* End captions */
-/* line 2107, ../components/sass/style.scss */
+/* line 2108, ../components/sass/style.scss */
 .comments {
   float: none;
   clear: both;
   background-color: #ef9a88;
 }
-/* line 2111, ../components/sass/style.scss */
+/* line 2112, ../components/sass/style.scss */
 .comments .logged-in-as a {
   color: white;
 }
-/* line 2115, ../components/sass/style.scss */
+/* line 2116, ../components/sass/style.scss */
 .comments .comment-reply-title {
   display: none;
 }
 
-/* line 2120, ../components/sass/style.scss */
+/* line 2121, ../components/sass/style.scss */
 .responses {
   padding: 15px;
 }
 
-/* line 2124, ../components/sass/style.scss */
+/* line 2125, ../components/sass/style.scss */
 .blog-comment {
   background-color: #FFFFFF;
   padding: 15px;
@@ -2236,23 +2237,23 @@ div.aligncenter {
   margin-bottom: 15px;
 }
 
-/* line 2131, ../components/sass/style.scss */
+/* line 2132, ../components/sass/style.scss */
 .blog-comment:last-child {
   margin-bottom: 0px;
 }
 
-/* line 2135, ../components/sass/style.scss */
+/* line 2136, ../components/sass/style.scss */
 .comment-author {
   font-size: 18px;
 }
 
-/* line 2139, ../components/sass/style.scss */
+/* line 2140, ../components/sass/style.scss */
 .commentform {
   margin-top: 0px;
   padding-top: 0px;
 }
 
-/* line 2144, ../components/sass/style.scss */
+/* line 2145, ../components/sass/style.scss */
 .reply-title {
   margin-left: 15px;
   color: #FFF;
@@ -2261,18 +2262,18 @@ div.aligncenter {
   padding-bottom: 5px;
 }
 
-/* line 2152, ../components/sass/style.scss */
+/* line 2153, ../components/sass/style.scss */
 .comment-content p {
   margin-bottom: 5px;
 }
 
-/* line 2156, ../components/sass/style.scss */
+/* line 2157, ../components/sass/style.scss */
 .white-box .bulletin-board h1 span:first-child {
   display: none;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 2161, ../components/sass/style.scss */
+  /* line 2162, ../components/sass/style.scss */
   .white-box .bulletin-board h1 {
     line-height: 38.8px;
     background-color: transparent;
@@ -2283,17 +2284,17 @@ div.aligncenter {
     height: auto;
   }
 
-  /* line 2171, ../components/sass/style.scss */
+  /* line 2172, ../components/sass/style.scss */
   .white-box .bulletin-board h1 span {
     margin-left: 0px;
   }
 
-  /* line 2174, ../components/sass/style.scss */
+  /* line 2175, ../components/sass/style.scss */
   .white-box .bulletin-board h1 span:first-child {
     display: inline;
   }
 
-  /* line 2177, ../components/sass/style.scss */
+  /* line 2178, ../components/sass/style.scss */
   .white-box .bulletin-board h1 span:last-child {
     display: block;
   }
@@ -2301,12 +2302,12 @@ div.aligncenter {
 /*-------------------------------------------
 comment form
 -------------------------------------------*/
-/* line 2186, ../components/sass/style.scss */
-#comments {
+/* line 2187, ../components/sass/style.scss */
+#comments, #respond {
   clear: both;
 }
 
-/* line 2189, ../components/sass/style.scss */
+/* line 2190, ../components/sass/style.scss */
 h2#comments {
   margin: 15px;
   padding-top: 15px;
@@ -2316,12 +2317,12 @@ h2#comments {
   margin-bottom: 0px;
 }
 
-/* line 2198, ../components/sass/style.scss */
+/* line 2199, ../components/sass/style.scss */
 .comment-navigation {
   margin: 15px;
 }
 
-/* line 2201, ../components/sass/style.scss */
+/* line 2202, ../components/sass/style.scss */
 .nav-previous a, nav-next a {
   border: 2px solid rgba(255, 255, 255, 0.4);
   font-family: evelethclean_regular,sans-serif;
@@ -2336,13 +2337,13 @@ h2#comments {
   text-align: center;
 }
 @media (min-width: 992px) {
-  /* line 2201, ../components/sass/style.scss */
+  /* line 2202, ../components/sass/style.scss */
   .nav-previous a, nav-next a {
     display: inline-block;
   }
 }
 
-/* line 2218, ../components/sass/style.scss */
+/* line 2219, ../components/sass/style.scss */
 .nav-previous a:hover, nav-next a:hover {
   border: 2px solid #E45639;
   font-family: evelethclean_regular,sans-serif;
@@ -2353,34 +2354,34 @@ h2#comments {
   text-decoration: none;
 }
 
-/* line 2230, ../components/sass/style.scss */
+/* line 2231, ../components/sass/style.scss */
 .comment-author {
   margin-bottom: 2px;
   margin-top: 0;
 }
 
-/* line 2234, ../components/sass/style.scss */
+/* line 2235, ../components/sass/style.scss */
 h5.comment-date {
   color: gray;
   margin-top: 0px;
 }
 
-/* line 2238, ../components/sass/style.scss */
+/* line 2239, ../components/sass/style.scss */
 .comment-content p:last-child {
   margin-bottom: 0;
 }
 
-/* line 2242, ../components/sass/style.scss */
+/* line 2243, ../components/sass/style.scss */
 #commentform small {
   font-size: 14px;
 }
 
-/* line 2246, ../components/sass/style.scss */
+/* line 2247, ../components/sass/style.scss */
 #commentform .form-control {
   margin-bottom: 10px;
 }
 
-/* line 2250, ../components/sass/style.scss */
+/* line 2251, ../components/sass/style.scss */
 #commentform {
   display: flex;
   flex-flow: column wrap;
@@ -2389,80 +2390,104 @@ h5.comment-date {
   height: auto;
 }
 @media (min-width: 768px) {
-  /* line 2250, ../components/sass/style.scss */
+  /* line 2251, ../components/sass/style.scss */
   #commentform {
     height: 310px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 2250, ../components/sass/style.scss */
+  /* line 2251, ../components/sass/style.scss */
   #commentform {
     height: 288px;
   }
 }
 
-/* line 2264, ../components/sass/style.scss */
+/* line 2265, ../components/sass/style.scss */
 h2.reply-title {
   color: #FFFFFF;
   font-size: 18px;
   padding-top: 20px;
 }
 
-/* line 2270, ../components/sass/style.scss */
+/* line 2271, ../components/sass/style.scss */
 #commentform p {
   width: 100%;
   margin-bottom: 0px;
 }
 @media (min-width: 768px) {
-  /* line 2270, ../components/sass/style.scss */
+  /* line 2271, ../components/sass/style.scss */
   #commentform p {
     width: 50%;
   }
 }
 
-/* line 2278, ../components/sass/style.scss */
+/* line 2279, ../components/sass/style.scss */
 #commentform p:nth-of-type(1), #commentform p:nth-of-type(2), #commentform p:nth-of-type(3) {
   padding-right: 0px;
 }
 @media (min-width: 768px) {
-  /* line 2278, ../components/sass/style.scss */
+  /* line 2279, ../components/sass/style.scss */
   #commentform p:nth-of-type(1), #commentform p:nth-of-type(2), #commentform p:nth-of-type(3) {
     padding-right: 10px;
   }
 }
 
-/* line 2285, ../components/sass/style.scss */
+/* line 2286, ../components/sass/style.scss */
 #commentform p:nth-of-type(4), #commentform p:nth-of-type(5) {
   padding-left: 0px;
 }
 @media (min-width: 768px) {
-  /* line 2285, ../components/sass/style.scss */
+  /* line 2286, ../components/sass/style.scss */
   #commentform p:nth-of-type(4), #commentform p:nth-of-type(5) {
     padding-left: 10px;
   }
 }
 
-/* line 2292, ../components/sass/style.scss */
+/* line 2293, ../components/sass/style.scss */
 #commentform p:nth-of-type(5) {
   text-align: right;
   margin-top: 20px;
 }
 
-/* line 2297, ../components/sass/style.scss */
+/* line 2298, ../components/sass/style.scss */
 textarea#comment.form-control {
   height: 150px;
 }
 @media (min-width: 768px) {
-  /* line 2297, ../components/sass/style.scss */
+  /* line 2298, ../components/sass/style.scss */
   textarea#comment.form-control {
     height: 198px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 2297, ../components/sass/style.scss */
+  /* line 2298, ../components/sass/style.scss */
   textarea#comment.form-control {
     height: 176px;
   }
+}
+
+/* line 2308, ../components/sass/style.scss */
+#respond {
+  background-color: #ee9988;
+}
+
+/* line 2312, ../components/sass/style.scss */
+.logged-in #commentform {
+  flex-flow: row wrap;
+  height: auto;
+}
+/* line 2316, ../components/sass/style.scss */
+.logged-in #commentform p {
+  width: 100%;
+}
+/* line 2319, ../components/sass/style.scss */
+.logged-in #commentform p:nth-of-type(3) {
+  text-align: right;
+  margin: 15px 0 10px 0;
+}
+/* line 2323, ../components/sass/style.scss */
+.logged-in #commentform .btn {
+  white-space: normal;
 }
 
 /*.comment-form {
