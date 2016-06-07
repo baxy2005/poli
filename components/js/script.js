@@ -191,7 +191,7 @@ $('.navmenu-default ul.nav li.dropdown').hover(function() {
 
  // Adds and removes body class depending on screen width.
   function screenClass() {
-    if($(window).innerHeight() < 735) {
+    if($(window).innerHeight() < 669) {
       $('.brand-on').addClass('brand-off');
     } else {
       $('.brand-on').removeClass('brand-off');

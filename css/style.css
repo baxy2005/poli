@@ -2495,6 +2495,97 @@ textarea#comment.form-control {
   clear: both;
 }
 
+/*-------------------------------------------
+wordpress bar correction
+-------------------------------------------*/
+/* line 2337, ../components/sass/style.scss */
+.logged-in .brand {
+  margin-top: 45px;
+}
+@media (min-width: 782px) {
+  /* line 2337, ../components/sass/style.scss */
+  .logged-in .brand {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 2337, ../components/sass/style.scss */
+  .logged-in .brand {
+    margin-top: 32px;
+  }
+}
+/* line 2347, ../components/sass/style.scss */
+.logged-in .navbar-top {
+  top: 45px;
+}
+@media (min-width: 782px) {
+  /* line 2347, ../components/sass/style.scss */
+  .logged-in .navbar-top {
+    top: 30px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 2347, ../components/sass/style.scss */
+  .logged-in .navbar-top {
+    top: inherit;
+  }
+}
+/* line 2358, ../components/sass/style.scss */
+.logged-in .full-brand {
+  top: 58px;
+}
+@media (min-width: 782px) {
+  /* line 2358, ../components/sass/style.scss */
+  .logged-in .full-brand {
+    top: 41px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 2358, ../components/sass/style.scss */
+  .logged-in .full-brand {
+    bottom: 15px;
+    left: 50px;
+    right: 0px;
+    top: auto;
+  }
+}
+@media (min-width: 992px) {
+  /* line 2372, ../components/sass/style.scss */
+  .logged-in .social-icons {
+    margin-top: 46px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 2377, ../components/sass/style.scss */
+  .logged-in #main-carousel {
+    margin-top: 100px;
+  }
+}
+
+/*-------------------------------------------
+teszthez
+-------------------------------------------*/
+/* line 2388, ../components/sass/style.scss */
+#wpadminbar {
+  direction: ltr;
+  color: #ccc;
+  font: 400 13px/32px "Open Sans",sans-serif;
+  height: 46px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 600px;
+  z-index: 99999;
+  background: #23282d;
+}
+@media (min-width: 782px) {
+  /* line 2388, ../components/sass/style.scss */
+  #wpadminbar {
+    height: 32px;
+  }
+}
+
 /*.comment-form {
 	display: flex;
 	justify-content: space-between;
