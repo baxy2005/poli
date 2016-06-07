@@ -2496,52 +2496,79 @@ textarea#comment.form-control {
 }
 
 /*-------------------------------------------
+table bar
+-------------------------------------------*/
+/* Row background colors */
+/* line 2337, ../components/sass/style.scss */
+.tablepress thead th,
+.tablepress tfoot th {
+  background-color: #E45639;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+/* line 2343, ../components/sass/style.scss */
+.tablepress .odd td {
+  background-color: transparent;
+}
+
+/* line 2346, ../components/sass/style.scss */
+.tablepress .even td {
+  background-color: #f9f9f9;
+}
+
+/* line 2349, ../components/sass/style.scss */
+.tablepress .row-hover tr:hover td {
+  background-color: #F8CF22;
+}
+
+/*-------------------------------------------
 wordpress bar correction
 -------------------------------------------*/
-/* line 2337, ../components/sass/style.scss */
+/* line 2360, ../components/sass/style.scss */
 .logged-in .brand {
   margin-top: 45px;
 }
 @media (min-width: 782px) {
-  /* line 2337, ../components/sass/style.scss */
+  /* line 2360, ../components/sass/style.scss */
   .logged-in .brand {
     margin-top: 30px;
   }
 }
 @media (min-width: 992px) {
-  /* line 2337, ../components/sass/style.scss */
+  /* line 2360, ../components/sass/style.scss */
   .logged-in .brand {
     margin-top: 32px;
   }
 }
-/* line 2347, ../components/sass/style.scss */
+/* line 2370, ../components/sass/style.scss */
 .logged-in .navbar-top {
   top: 45px;
 }
 @media (min-width: 782px) {
-  /* line 2347, ../components/sass/style.scss */
+  /* line 2370, ../components/sass/style.scss */
   .logged-in .navbar-top {
     top: 30px;
   }
 }
 @media (min-width: 992px) {
-  /* line 2347, ../components/sass/style.scss */
+  /* line 2370, ../components/sass/style.scss */
   .logged-in .navbar-top {
     top: inherit;
   }
 }
-/* line 2358, ../components/sass/style.scss */
+/* line 2381, ../components/sass/style.scss */
 .logged-in .full-brand {
   top: 58px;
 }
 @media (min-width: 782px) {
-  /* line 2358, ../components/sass/style.scss */
+  /* line 2381, ../components/sass/style.scss */
   .logged-in .full-brand {
     top: 41px;
   }
 }
 @media (min-width: 992px) {
-  /* line 2358, ../components/sass/style.scss */
+  /* line 2381, ../components/sass/style.scss */
   .logged-in .full-brand {
     bottom: 15px;
     left: 50px;
@@ -2550,13 +2577,13 @@ wordpress bar correction
   }
 }
 @media (min-width: 992px) {
-  /* line 2372, ../components/sass/style.scss */
+  /* line 2395, ../components/sass/style.scss */
   .logged-in .social-icons {
     margin-top: 46px;
   }
 }
 @media (min-width: 992px) {
-  /* line 2377, ../components/sass/style.scss */
+  /* line 2400, ../components/sass/style.scss */
   .logged-in #main-carousel {
     margin-top: 100px;
   }
@@ -2565,7 +2592,7 @@ wordpress bar correction
 /*-------------------------------------------
 teszthez
 -------------------------------------------*/
-/* line 2388, ../components/sass/style.scss */
+/* line 2412, ../components/sass/style.scss */
 #wpadminbar {
   direction: ltr;
   color: #ccc;
@@ -2580,7 +2607,7 @@ teszthez
   background: #23282d;
 }
 @media (min-width: 782px) {
-  /* line 2388, ../components/sass/style.scss */
+  /* line 2412, ../components/sass/style.scss */
   #wpadminbar {
     height: 32px;
   }
