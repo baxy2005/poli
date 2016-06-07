@@ -2199,7 +2199,7 @@ h2#comments {
 .comment-navigation {
 	margin: 15px;
 }
-.nav-previous a, nav-next a {
+.nav-previous a, .nav-next a {
 border: 2px solid $light-color-white;
 font-family: evelethclean_regular,sans-serif;
 font-size: 14px;
@@ -2216,7 +2216,7 @@ color: $color-white;
 }
 }
 
-.nav-previous a:hover, nav-next a:hover {
+.nav-previous a:hover, .nav-next a:hover {
 border: 2px solid $color-primary;
 font-family: evelethclean_regular,sans-serif;
 font-size: 14px;
@@ -2324,7 +2324,9 @@ textarea#comment.form-control {
 	white-space: normal;	
 	}
 }
-
+.clear {
+	clear: both;
+}
 
 /*.comment-form {
 	display: flex;

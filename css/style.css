@@ -2323,7 +2323,7 @@ h2#comments {
 }
 
 /* line 2202, ../components/sass/style.scss */
-.nav-previous a, nav-next a {
+.nav-previous a, .nav-next a {
   border: 2px solid rgba(255, 255, 255, 0.4);
   font-family: evelethclean_regular,sans-serif;
   font-size: 14px;
@@ -2338,13 +2338,13 @@ h2#comments {
 }
 @media (min-width: 992px) {
   /* line 2202, ../components/sass/style.scss */
-  .nav-previous a, nav-next a {
+  .nav-previous a, .nav-next a {
     display: inline-block;
   }
 }
 
 /* line 2219, ../components/sass/style.scss */
-.nav-previous a:hover, nav-next a:hover {
+.nav-previous a:hover, .nav-next a:hover {
   border: 2px solid #E45639;
   font-family: evelethclean_regular,sans-serif;
   font-size: 14px;
@@ -2488,6 +2488,11 @@ textarea#comment.form-control {
 /* line 2323, ../components/sass/style.scss */
 .logged-in #commentform .btn {
   white-space: normal;
+}
+
+/* line 2327, ../components/sass/style.scss */
+.clear {
+  clear: both;
 }
 
 /*.comment-form {
