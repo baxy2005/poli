@@ -2317,9 +2317,13 @@ textarea#comment.form-control {
 	p {
 		width: 100%;
 	}
+  p:nth-of-type(2) {
+  padding-right: 0px;
+  }
+
 	p:nth-of-type(3) {
 		text-align: right;
-		margin: 15px 0 10px 0;
+		margin: 15px 0 0 0;
 	}
 	.btn {
 	white-space: normal;
