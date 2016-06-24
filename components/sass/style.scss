@@ -122,6 +122,10 @@ src: url('../fonts/3138FD_2_0.eot?#iefix') format('embedded-opentype'),
 
 .news-row {
 position:relative;
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
 }
 
 .same-height {
@@ -1003,7 +1007,6 @@ blockquote{
     padding-right: 30px;
 }
 .media-body {
-	height: 130px;
 		p {
 			margin-bottom: 0;
 		}
@@ -2324,6 +2327,7 @@ textarea#comment.form-control {
 	p:nth-of-type(3) {
 		text-align: right;
 		margin: 15px 0 0 0;
+    padding-right: 0;
 	}
 	.btn {
 	white-space: normal;
