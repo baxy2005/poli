@@ -1190,7 +1190,11 @@ background-color: $light-2-color-white;
 	}
 
 }
-
+.bulletin-board {
+  h1 span{
+    margin-left: 0;
+  }
+}
 .margint-bottom-thirty {
 	margin-bottom: 30px;
 }

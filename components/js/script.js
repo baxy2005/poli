@@ -46,7 +46,7 @@ $('#calendar-carousel').owlCarousel({
         992:{
             items:1,
             nav:true,
-            loop:false
+            loop:true
         }
     }
 });
@@ -78,9 +78,9 @@ $('.owl-artwork').owlCarousel({
     }
 });
 
-  
+
 $(function() {
-  
+
   // Init ScrollMagic Controller
   var scrollMagicController = new ScrollMagic({
     globalSceneOptions: {
@@ -95,7 +95,7 @@ $(function() {
   })
   .setPin('.secondary-nav')
   .addTo(scrollMagicController);
- 
+
     var scene3 = new ScrollScene({
 	triggerElement: '#nav-trigger',
   	offset: 6  /*offset the trigger 150px below #scene's top */
@@ -107,60 +107,60 @@ $(function() {
 	 var scene6 = new ScrollScene({
 	triggerElement: '#nav-trigger',
   	offset: 120  /*offset the trigger 150px below #scene's top */
-	
+
   })
     .setClassToggle('.secondary-nav', 'fade-secondary-nav-bg')
     .addTo(scrollMagicController);
-	
+
 
     var scene = new ScrollScene({
     offset: 60 /* offset the trigger 150px below #scene's top */
-	
+
   })
     .setClassToggle('.navmenu', 'navmenu-fixed')
     .addTo(scrollMagicController);
-	
-	
-	
-	
+
+
+
+
 	//var tween = TweenMax.from('.brand-on', 0.2, {
 //    opacity: 0,
 //  });
 //		 var scene7 = new ScrollScene({
 //			  triggerElement: 'brand-on',
 //			   offset: 433
-//	
+//
 //  })
 //    .setTween(tween)
 //    .addTo(scrollMagicController);
-	
-	
+
+
 	 var scene4 = new ScrollScene({
     offset: 60 /* offset the trigger 150px below #scene's top */
-	
+
   })
     .setClassToggle('.form-inline-opening', 'form-inline-opening-fixed')
     .addTo(scrollMagicController);
-	
+
 	  var scene8 = new ScrollScene({
     offset: 60 /* offset the trigger 150px below #scene's top */
-	
+
   })
     .setClassToggle('.secondary-nav-subpage', 'secondary-nav-top')
     .addTo(scrollMagicController);
-	
+
 		 var scene9 = new ScrollScene({
     offset: 90 /* offset the trigger 150px below #scene's top */
-	
+
   })
     .setClassToggle('.secondary-nav-subpage', 'fade-secondary-nav-bg')
     .addTo(scrollMagicController);
-	
-	
+
+
   // Add debug indicators fixed on right side
    scene.addIndicators();
-   
- 
+
+
 });
 
 
@@ -205,4 +205,3 @@ $('.navmenu-default ul.nav li.dropdown').hover(function() {
   $(window).bind('resize',function(){
     screenClass();
   });
-
