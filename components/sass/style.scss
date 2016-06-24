@@ -2206,7 +2206,20 @@ h2#comments {
 }
 .comment-navigation {
 	margin: 15px;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+  justify-content: space-between;
+  float: row;
+  }
 }
+.nav-previous {
+  margin-bottom: 15px;
+@media (min-width: 768px) {
+  margin-bottom: 0px;
+}
+}
+
 .nav-previous a, .nav-next a {
 border: 2px solid $light-color-white;
 font-family: evelethclean_regular,sans-serif;
@@ -2223,6 +2236,7 @@ color: $color-white;
 	display: inline-block;
 }
 }
+
 
 .nav-previous a:hover, .nav-next a:hover {
 border: 2px solid $color-primary;
@@ -2419,6 +2433,9 @@ wordpress bar correction
 @media (max-width: 600px) {
 position: fixed !important;
 }
+}
+table td p {
+  margin-bottom: 0;
 }
 /*-------------------------------------------
 big button

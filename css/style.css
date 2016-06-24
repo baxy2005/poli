@@ -2327,9 +2327,29 @@ h2#comments {
 /* line 2207, ../components/sass/style.scss */
 .comment-navigation {
   margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  /* line 2207, ../components/sass/style.scss */
+  .comment-navigation {
+    justify-content: space-between;
+    float: row;
+  }
 }
 
-/* line 2210, ../components/sass/style.scss */
+/* line 2216, ../components/sass/style.scss */
+.nav-previous {
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  /* line 2216, ../components/sass/style.scss */
+  .nav-previous {
+    margin-bottom: 0px;
+  }
+}
+
+/* line 2223, ../components/sass/style.scss */
 .nav-previous a, .nav-next a {
   border: 2px solid rgba(255, 255, 255, 0.4);
   font-family: evelethclean_regular,sans-serif;
@@ -2344,13 +2364,13 @@ h2#comments {
   text-align: center;
 }
 @media (min-width: 992px) {
-  /* line 2210, ../components/sass/style.scss */
+  /* line 2223, ../components/sass/style.scss */
   .nav-previous a, .nav-next a {
     display: inline-block;
   }
 }
 
-/* line 2227, ../components/sass/style.scss */
+/* line 2241, ../components/sass/style.scss */
 .nav-previous a:hover, .nav-next a:hover {
   border: 2px solid #E45639;
   font-family: evelethclean_regular,sans-serif;
@@ -2361,34 +2381,34 @@ h2#comments {
   text-decoration: none;
 }
 
-/* line 2239, ../components/sass/style.scss */
+/* line 2253, ../components/sass/style.scss */
 .comment-author {
   margin-bottom: 2px;
   margin-top: 0;
 }
 
-/* line 2243, ../components/sass/style.scss */
+/* line 2257, ../components/sass/style.scss */
 h5.comment-date {
   color: gray;
   margin-top: 0px;
 }
 
-/* line 2247, ../components/sass/style.scss */
+/* line 2261, ../components/sass/style.scss */
 .comment-content p:last-child {
   margin-bottom: 0;
 }
 
-/* line 2251, ../components/sass/style.scss */
+/* line 2265, ../components/sass/style.scss */
 #commentform small {
   font-size: 14px;
 }
 
-/* line 2255, ../components/sass/style.scss */
+/* line 2269, ../components/sass/style.scss */
 #commentform .form-control {
   margin-bottom: 10px;
 }
 
-/* line 2259, ../components/sass/style.scss */
+/* line 2273, ../components/sass/style.scss */
 #commentform {
   display: flex;
   flex-flow: column wrap;
@@ -2397,112 +2417,112 @@ h5.comment-date {
   height: auto;
 }
 @media (min-width: 768px) {
-  /* line 2259, ../components/sass/style.scss */
+  /* line 2273, ../components/sass/style.scss */
   #commentform {
     height: 310px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 2259, ../components/sass/style.scss */
+  /* line 2273, ../components/sass/style.scss */
   #commentform {
     height: 288px;
   }
 }
 
-/* line 2273, ../components/sass/style.scss */
+/* line 2287, ../components/sass/style.scss */
 h2.reply-title {
   color: #FFFFFF;
   font-size: 18px;
   padding-top: 20px;
 }
 
-/* line 2279, ../components/sass/style.scss */
+/* line 2293, ../components/sass/style.scss */
 #commentform p {
   width: 100%;
   margin-bottom: 0px;
 }
 @media (min-width: 768px) {
-  /* line 2279, ../components/sass/style.scss */
+  /* line 2293, ../components/sass/style.scss */
   #commentform p {
     width: 50%;
   }
 }
 
-/* line 2287, ../components/sass/style.scss */
+/* line 2301, ../components/sass/style.scss */
 #commentform p:nth-of-type(1), #commentform p:nth-of-type(2), #commentform p:nth-of-type(3) {
   padding-right: 0px;
 }
 @media (min-width: 768px) {
-  /* line 2287, ../components/sass/style.scss */
+  /* line 2301, ../components/sass/style.scss */
   #commentform p:nth-of-type(1), #commentform p:nth-of-type(2), #commentform p:nth-of-type(3) {
     padding-right: 10px;
   }
 }
 
-/* line 2294, ../components/sass/style.scss */
+/* line 2308, ../components/sass/style.scss */
 #commentform p:nth-of-type(4), #commentform p:nth-of-type(5) {
   padding-left: 0px;
 }
 @media (min-width: 768px) {
-  /* line 2294, ../components/sass/style.scss */
+  /* line 2308, ../components/sass/style.scss */
   #commentform p:nth-of-type(4), #commentform p:nth-of-type(5) {
     padding-left: 10px;
   }
 }
 
-/* line 2301, ../components/sass/style.scss */
+/* line 2315, ../components/sass/style.scss */
 #commentform p:nth-of-type(5) {
   text-align: right;
   margin-top: 20px;
 }
 
-/* line 2306, ../components/sass/style.scss */
+/* line 2320, ../components/sass/style.scss */
 textarea#comment.form-control {
   height: 150px;
 }
 @media (min-width: 768px) {
-  /* line 2306, ../components/sass/style.scss */
+  /* line 2320, ../components/sass/style.scss */
   textarea#comment.form-control {
     height: 198px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 2306, ../components/sass/style.scss */
+  /* line 2320, ../components/sass/style.scss */
   textarea#comment.form-control {
     height: 176px;
   }
 }
 
-/* line 2316, ../components/sass/style.scss */
+/* line 2330, ../components/sass/style.scss */
 #respond {
   background-color: #ee9988;
 }
 
-/* line 2320, ../components/sass/style.scss */
+/* line 2334, ../components/sass/style.scss */
 .logged-in #commentform {
   flex-flow: row wrap;
   height: auto;
 }
-/* line 2324, ../components/sass/style.scss */
+/* line 2338, ../components/sass/style.scss */
 .logged-in #commentform p {
   width: 100%;
 }
-/* line 2327, ../components/sass/style.scss */
+/* line 2341, ../components/sass/style.scss */
 .logged-in #commentform p:nth-of-type(2) {
   padding-right: 0px;
 }
-/* line 2331, ../components/sass/style.scss */
+/* line 2345, ../components/sass/style.scss */
 .logged-in #commentform p:nth-of-type(3) {
   text-align: right;
   margin: 15px 0 0 0;
   padding-right: 0;
 }
-/* line 2336, ../components/sass/style.scss */
+/* line 2350, ../components/sass/style.scss */
 .logged-in #commentform .btn {
   white-space: normal;
 }
 
-/* line 2340, ../components/sass/style.scss */
+/* line 2354, ../components/sass/style.scss */
 .clear {
   clear: both;
 }
@@ -2511,23 +2531,23 @@ textarea#comment.form-control {
 table bar
 -------------------------------------------*/
 /* Row background colors */
-/* line 2350, ../components/sass/style.scss */
+/* line 2364, ../components/sass/style.scss */
 .tablepress thead th,
 .tablepress tfoot th {
   background-color: #E45639 !important;
 }
 
-/* line 2354, ../components/sass/style.scss */
+/* line 2368, ../components/sass/style.scss */
 .tablepress .odd td {
   background-color: transparent  !important;
 }
 
-/* line 2357, ../components/sass/style.scss */
+/* line 2371, ../components/sass/style.scss */
 .tablepress .even td {
   background-color: #f9f9f9  !important;
 }
 
-/* line 2360, ../components/sass/style.scss */
+/* line 2374, ../components/sass/style.scss */
 .tablepress .row-hover tr:hover td {
   background-color: #F8CF22 !important;
 }
@@ -2535,50 +2555,50 @@ table bar
 /*-------------------------------------------
 wordpress bar correction
 -------------------------------------------*/
-/* line 2371, ../components/sass/style.scss */
+/* line 2385, ../components/sass/style.scss */
 .logged-in .brand {
   margin-top: 45px;
 }
 @media (min-width: 782px) {
-  /* line 2371, ../components/sass/style.scss */
+  /* line 2385, ../components/sass/style.scss */
   .logged-in .brand {
     margin-top: 30px;
   }
 }
 @media (min-width: 992px) {
-  /* line 2371, ../components/sass/style.scss */
+  /* line 2385, ../components/sass/style.scss */
   .logged-in .brand {
     margin-top: 0px;
   }
 }
-/* line 2381, ../components/sass/style.scss */
+/* line 2395, ../components/sass/style.scss */
 .logged-in .navbar-top {
   top: 45px;
 }
 @media (min-width: 782px) {
-  /* line 2381, ../components/sass/style.scss */
+  /* line 2395, ../components/sass/style.scss */
   .logged-in .navbar-top {
     top: 30px;
   }
 }
 @media (min-width: 992px) {
-  /* line 2381, ../components/sass/style.scss */
+  /* line 2395, ../components/sass/style.scss */
   .logged-in .navbar-top {
     top: inherit;
   }
 }
-/* line 2392, ../components/sass/style.scss */
+/* line 2406, ../components/sass/style.scss */
 .logged-in .full-brand {
   top: 58px;
 }
 @media (min-width: 782px) {
-  /* line 2392, ../components/sass/style.scss */
+  /* line 2406, ../components/sass/style.scss */
   .logged-in .full-brand {
     top: 41px;
   }
 }
 @media (min-width: 992px) {
-  /* line 2392, ../components/sass/style.scss */
+  /* line 2406, ../components/sass/style.scss */
   .logged-in .full-brand {
     bottom: 15px;
     left: 50px;
@@ -2587,34 +2607,39 @@ wordpress bar correction
   }
 }
 @media (min-width: 992px) {
-  /* line 2406, ../components/sass/style.scss */
+  /* line 2420, ../components/sass/style.scss */
   .logged-in .social-icons {
     margin-top: 14px;
   }
 }
 @media (min-width: 992px) {
-  /* line 2411, ../components/sass/style.scss */
+  /* line 2425, ../components/sass/style.scss */
   .logged-in #main-carousel {
     margin-top: 70px;
   }
 }
 
 @media (max-width: 600px) {
-  /* line 2418, ../components/sass/style.scss */
+  /* line 2432, ../components/sass/style.scss */
   #wpadminbar {
     position: fixed !important;
   }
 }
 
+/* line 2437, ../components/sass/style.scss */
+table td p {
+  margin-bottom: 0;
+}
+
 /*-------------------------------------------
 big button
 -------------------------------------------*/
-/* line 2427, ../components/sass/style.scss */
+/* line 2444, ../components/sass/style.scss */
 .white-box.white-box-main-content .mb-center {
   display: block;
   text-align: center;
 }
-/* line 2431, ../components/sass/style.scss */
+/* line 2448, ../components/sass/style.scss */
 .white-box.white-box-main-content .mb-container {
   display: block;
   margin: 15px 0px;
