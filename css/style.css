@@ -2642,19 +2642,20 @@ wordpress bar correction
 }
 
 /* line 2446, ../components/sass/style.scss */
-table td p {
+.white-box table td p {
   margin-bottom: 0;
+  border: none !important;
 }
 
 /*-------------------------------------------
 big button
 -------------------------------------------*/
-/* line 2453, ../components/sass/style.scss */
+/* line 2454, ../components/sass/style.scss */
 .white-box.white-box-main-content .mb-center {
   display: block;
   text-align: center;
 }
-/* line 2457, ../components/sass/style.scss */
+/* line 2458, ../components/sass/style.scss */
 .white-box.white-box-main-content .mb-container {
   display: block;
   margin: 15px 0px;
