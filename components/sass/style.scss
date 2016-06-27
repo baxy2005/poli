@@ -993,11 +993,13 @@ blockquote{
     line-height: 28px;
     background-image: url(../images/poli-h1-bg-small.png);
     background-color: transparent;
+    font-size: 20px;
     @media (min-width: 992px) {
 		line-height: 38.8px;
 		background-image: url(../images/poli-h1-bg.png);
 		padding: 4px 0 0 0;
     margin-top: -5px;
+    font-size: 28px;
   }
 	}
 }
@@ -1172,7 +1174,7 @@ background-color: $light-2-color-white;
 	h1 {
 			margin-top: 0;
 			font-family: evelethclean_regular, sans-serif;
-			font-size: 20px;
+			font-size: 28px;
 			color: $color-primary;
 			padding: 0px;
 			background-color: #F8CF22;
@@ -1185,9 +1187,6 @@ background-color: $light-2-color-white;
 			display: flex;
 			align-items: baseline;
 			justify-content: center;
-      @media (min-width: 992px) {
-      	font-size: 28px;
-      }
 		span {
 		font-family: $font-primary;
 		margin-left: 10px;
