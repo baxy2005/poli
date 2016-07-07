@@ -640,7 +640,7 @@ display: block;
 	color: $color-primary !important;
 }
 
- .secondary-nav .nav > li > a:focus, .secondary-nav .nav > li > a:hover,  .secondary-nav-subpage .nav > li > a:focus, .secondary-nav-subpage .nav > li > a:hover {
+.secondary-nav .nav > li > a:hover, .secondary-nav-subpage .nav > li > a:hover {
     text-decoration: none;
     background-color: $color-white;
 	color: $color-primary !important;
@@ -952,6 +952,9 @@ h3 {
 }
 h4 {
 		font-size: 16px;
+}
+hr {
+  border-top: 1px solid $mid-color2-gray;
 }
 
 blockquote{
