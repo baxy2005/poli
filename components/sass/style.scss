@@ -646,6 +646,10 @@ display: block;
 	color: $color-primary !important;
 }
 
+.secondary-nav .nav > li > a:focus, .secondary-nav-subpage .nav > li > a:focus {
+    background-color: transparent;;
+}
+
  .secondary-nav .dropdown-menu li > a:hover,  .secondary-nav .dropdown-menu li > a:focus,  .secondary-nav .dropdown-menu li > a:active,  .secondary-nav-subpage .dropdown-menu li > a:hover,  .secondary-nav-subpage .dropdown-menu li > a:focus,  .secondary-nav-subpage .dropdown-menu li > a:active {
 
   background-color: $color-primary;
