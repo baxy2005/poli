@@ -5,7 +5,6 @@
     font-family: 'evelethclean_regular';
     src: url('../fonts/yellow_design_studio_-_eveleth_clean_regular-webfont.eot');
     src: url('../fonts/yellow_design_studio_-_eveleth_clean_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/yellow_design_studio_-_eveleth_clean_regular-webfont.woff2') format('woff2'),
          url('../fonts/yellow_design_studio_-_eveleth_clean_regular-webfont.woff') format('woff'),
          url('../fonts/yellow_design_studio_-_eveleth_clean_regular-webfont.ttf') format('truetype'),
          url('../fonts/yellow_design_studio_-_eveleth_clean_regular-webfont.svg#evelethclean_regular') format('svg');
@@ -18,7 +17,6 @@
     font-family: 'evelethclean_thin';
     src: url('../fonts/yellow_design_studio_-_eveleth_clean_thin-webfont.eot');
     src: url('../fonts/yellow_design_studio_-_eveleth_clean_thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/yellow_design_studio_-_eveleth_clean_thin-webfont.woff2') format('woff2'),
          url('../fonts/yellow_design_studio_-_eveleth_clean_thin-webfont.woff') format('woff'),
          url('../fonts/yellow_design_studio_-_eveleth_clean_thin-webfont.ttf') format('truetype'),
          url('../fonts/yellow_design_studio_-_eveleth_clean_thin-webfont.svg#evelethclean_thin') format('svg');
@@ -525,9 +523,10 @@ margin: 0 auto;
 	width: 87.5%;
 }
 
-.navmenu-default .dropdown:hover .dropdown-menu {
+/*.navmenu-default .dropdown:hover .dropdown-menu {
         display: block;
     }
+    */
 
 footer .footer-content {
 	padding: 20px 15px 15px 15px;
@@ -646,9 +645,7 @@ display: block;
 	color: $color-primary !important;
 }
 
-.secondary-nav .nav > li > a:focus, .secondary-nav-subpage .nav > li > a:focus {
-    background-color: transparent;;
-}
+
 
  .secondary-nav .dropdown-menu li > a:hover,  .secondary-nav .dropdown-menu li > a:focus,  .secondary-nav .dropdown-menu li > a:active,  .secondary-nav-subpage .dropdown-menu li > a:hover,  .secondary-nav-subpage .dropdown-menu li > a:focus,  .secondary-nav-subpage .dropdown-menu li > a:active {
 
