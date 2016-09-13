@@ -493,8 +493,47 @@ p {
     margin-bottom: 20px;
 	margin-top: 0px;
 }
+/*mobile navigation seach forms*/
 
+.form-control-search {
+	width: 175px;
+	border: none;
+	border-radius: 0;
+	height: 35px;
+}
 
+.btn-default-search {
+	width: 33px;
+	background-color: $color-secondary;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	height: 35px;
+	color: $color-primary;
+	font-size: 22px;
+	padding-left: 2px;
+  float: right;
+}
+
+.btn-default-search:hover, .btn-default-search:focus, .btn-default-search:active {
+	background-color: $color-secondary !important;
+	color: $color-primary !important;
+}
+.form-inline {
+	background: white;
+}
+.form-inline-opening {
+  width: auto;
+  margin: 13px 14px;
+  height: 35px;
+}
+.form-inline.form-inline-opening .form-control {
+    vertical-align: middle !important;
+    display: inline-block !important;
+  }
+.form-inline.form-inline-opening .form-group {
+  display: block;
+}
 @media (max-width: 767px) {
 .media {
 text-align: center;
@@ -528,6 +567,7 @@ margin: 0 auto;
     }
     */
 
+
 footer .footer-content {
 	padding: 20px 15px 15px 15px;
 	margin-bottom: 20px;
@@ -558,6 +598,8 @@ footer .footer-content {
 	.form-inline-opening {
 
 		width: 165px;
+    margin: 0px;
+    height: 33px
 	}
 
 
@@ -567,6 +609,7 @@ footer .footer-content {
     z-index: 1032;
 	top: 30px;
 	}
+
 
 	/* secondary-nav  secondary-nav-subpage */
 
@@ -825,7 +868,9 @@ color: $color-white;
 .form-inline {
 	background: white;
 }
-
+.form-inline.form-inline-opening .form-group {
+  display: inline-block;
+}
 .navmenu-nav {
 background-color: $color-primary;
 }
@@ -886,12 +931,17 @@ margin-right: 10px;
 	margin-top: 40px;
 	h2, p, h3 {
 		color: $color-white;
+    hr {
+      border-top: 1px solid $color-white;
+    }
 	}
 	h2:first-child {
 	margin-top: 20px;
 	}
 	h3 {
 	margin-top: 10px;
+  clear: both;
+  float: none;
 	}
 	.news-row h4 {
 		font-size: 20px;
@@ -905,6 +955,7 @@ margin-right: 10px;
 	}
 	.btn {
 		border: 2px solid $light-color-white;
+    font-family: evelethclean_regular;
 	}
 		.btn-default {
 		color: $color-white;
@@ -1298,7 +1349,7 @@ margin: 45px 0 60px 0;
 		}
 }
 
-/*.owl-carousel .item {
+/*.owl-carousel {
     height: auto;
     background: #4DC7A0;
 }*/
