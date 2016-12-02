@@ -295,6 +295,20 @@ body{
 	margin: 0;
 	min-height: 30px;
  }
+ .dropdown-backdrop {
+   display: none;
+ }
+ li.open .glyphicon-plus {
+   -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+ }
+ .glyphicon-plus {
+     -moz-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+ }
  .dropdown-menu {
     display: none;
     background-clip: padding-box;
@@ -873,6 +887,7 @@ color: $color-white;
 }
 .navmenu-nav {
 background-color: $color-primary;
+overflow: hidden;
 }
 }
 
