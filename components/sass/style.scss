@@ -1221,8 +1221,9 @@ blockquote{
 			}
 
 .bg-illu {
-	background-image:url(../images/poli-bg-illu.svg);
+  background-image: url(../images/poli-bg-illu-2@2x.png);
 	background-repeat: repeat;
+  background-size: 415px 761px;
 	margin-left:265px;
 	margin-top: 10px;
 	opacity: .15;
@@ -1230,6 +1231,12 @@ blockquote{
 	width: 100%;
 	height:100%;
 	position: fixed;
+  @media (min-width: 415px) {
+    background-image: url(../images/poli-bg-illu.svg);
+    background-repeat: repeat;
+    background-size: 1624px 761px;
+  }
+
 
 }
 main, .container {
