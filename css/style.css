@@ -1620,7 +1620,7 @@ main, .container {
 /* line 1438, ../components/sass/style.scss */
 .bulletin-board .owl-theme .owl-controls .owl-dots {
   position: absolute;
-  top: -475px;
+  top: -495px;
   left: 15px;
 }
 
@@ -2797,3 +2797,81 @@ form-submit {
 }
 }
 */
+/*-------------------------------------------
+contact-7-form
+-------------------------------------------*/
+/* line 2588, ../components/sass/style.scss */
+.white-box .wpcf7-form p {
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.75);
+}
+/* line 2592, ../components/sass/style.scss */
+.white-box .wpcf7-form hr {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+/* line 2597, ../components/sass/style.scss */
+.white-box .wpcf7-form-control {
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
+  -moz-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  height: 34px;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  margin-top: 5px;
+}
+/* line 2613, ../components/sass/style.scss */
+.white-box .wpcf7-form-control:focus {
+  box-shadow: 0px 2px 8px 0px #E45639;
+  background: #fce791;
+}
+/* line 2617, ../components/sass/style.scss */
+.white-box .wpcf7-captchac {
+  width: auto;
+  height: auto;
+  background-color: white;
+  margin-bottom: 13px;
+}
+/* line 2623, ../components/sass/style.scss */
+.white-box .wpcf7-textarea {
+  height: 176px;
+}
+/* line 2626, ../components/sass/style.scss */
+.white-box .wpcf7-submit {
+  font-family: evelethclean_regular, sans-serif;
+  padding: 8px 20px 8px 20px;
+  border-radius: 0;
+  background-color: transparent;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  width: auto;
+  height: auto;
+  box-shadow: none;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+/* line 2641, ../components/sass/style.scss */
+.white-box .wpcf7-submit:hover {
+  background-color: #E45639;
+  border: 2px solid #E45639;
+  color: #FFFFFF;
+}
+/* line 2646, ../components/sass/style.scss */
+.white-box .wpcf7-radio {
+  box-shadow: none;
+  padding-left: 0px;
+}
+/* line 2649, ../components/sass/style.scss */
+.white-box .wpcf7-radio .wpcf7-list-item-label {
+  padding: 0 10px;
+  color: white;
+}

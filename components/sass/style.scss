@@ -1437,7 +1437,7 @@ h1{
 
 .bulletin-board .owl-theme .owl-controls .owl-dots {
 position: absolute;
-top: -475px;
+top: -495px;
 left: 15px;
 
 }
@@ -2580,3 +2580,75 @@ form-submit {
 }
 }
 */
+/*-------------------------------------------
+contact-7-form
+-------------------------------------------*/
+.white-box {
+  .wpcf7-form {
+    p {
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.75);
+    }
+    hr {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+  }
+  .wpcf7-form-control {
+      border:  none;
+      border-radius: 0px;
+      box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.13);
+      -moz-transition: background .2s ;
+      -o-transition: background .2s ;
+      -webkit-transition: background .2s ;
+      transition: background .2s ;
+      height: 34px;
+      width: 100%;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555;
+      margin-top: 5px;
+  }
+  .wpcf7-form-control:focus {
+      box-shadow: 0px 2px 8px 0px $color-primary;
+      background: $fade-color-secondary;
+  }
+  .wpcf7-captchac {
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin-bottom: 13px;
+  }
+  .wpcf7-textarea {
+    height: 176px;
+  }
+  .wpcf7-submit {
+    font-family: $font-primary;
+    padding: 8px 20px 8px 20px;
+    border-radius: 0;
+    background-color: transparent;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+  }
+  .wpcf7-submit:hover {
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+    color: $color-white;
+  }
+  .wpcf7-radio {
+    box-shadow: none;
+    padding-left: 0px;
+    .wpcf7-list-item-label {
+      padding: 0 10px;
+      color: white;
+    }
+  }
+}
