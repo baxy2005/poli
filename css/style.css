@@ -316,6 +316,10 @@ body .ngg-galleryoverview.default-view .ngg-galleryoverview.carousel-view .ngg-g
   max-width: 80px !important;
 }
 
+body .ngg-galleryoverview.default-view .ngg-gallery-thumbnail img {
+  width: 100%;
+}
+
 /*artwork*/
 /*.artwork {
 	width: 100%;
