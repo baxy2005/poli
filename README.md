@@ -4,7 +4,7 @@
 
 ## Buildelés:
 
-	sass components/sass:css --watc
+	sass components/sass:css --watch
 
 	cp components/js/script.js js
 	
