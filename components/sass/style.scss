@@ -35,9 +35,11 @@ src: url('../fonts/3138FD_2_0.eot?#iefix') format('embedded-opentype'),
 
 
 
-@import "compass/css3";
+//@import "compass/css3";
 @import "variables";
 @import "mixins";
+@import "gallery";
+@import "extras";
 
 /*artwork*/
 
