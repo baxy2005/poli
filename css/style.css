@@ -777,7 +777,7 @@ footer .footer-banner {
 
 .footer-content {
   text-align: center;
-  background-color: tint(#E45639, 20%);
+  background-color: #e97861;
   padding: 20px 0 15px 0;
   margin-bottom: 20px;
 }
@@ -1205,7 +1205,7 @@ footer .footer-banner {
 }
 
 .white-box form {
-  background-color: tint(#E45639, 40%);
+  background-color: #ef9a88;
   padding: 15px;
   margin-top: 40px;
 }
@@ -1258,7 +1258,7 @@ footer .footer-banner {
 }
 .white-box form .form-control:focus {
   box-shadow: 0px 2px 8px 0px #E45639;
-  background: tint(#F8CF22, 50%);
+  background: #fce791;
 }
 .white-box p {
   margin-bottom: 20px;
@@ -1295,14 +1295,14 @@ footer .footer-banner {
   color: #FFFFFF;
   line-height: 29px;
   font-size: 15px;
-  background: tint(#E45639, 40%);
+  background: #ef9a88;
   display: inline;
   padding: 0px;
   box-shadow: 5px 0px 0px rgba(255, 255, 255, 0.8), -5px 0px 0px rgba(255, 255, 255, 0.8);
   font-weight: normal;
   box-decoration-break: clone;
   padding: 3px 0 0 0;
-  box-shadow: 5px 0px 0px tint(#E45639, 40%), -5px 0px 0px tint(#E45639, 40%);
+  box-shadow: 5px 0px 0px #ef9a88, -5px 0px 0px #ef9a88;
   margin: 0px;
 }
 .white-box blockquote span {
@@ -2525,7 +2525,7 @@ textarea#comment.form-control {
 }
 
 #respond {
-  background-color: tint(#E45639, 40%);
+  background-color: #ef9a88;
 }
 
 .logged-in #commentform {
@@ -2721,7 +2721,7 @@ contact-7-form
 }
 .white-box .wpcf7-form-control:focus {
   box-shadow: 0px 2px 8px 0px #E45639;
-  background: tint(#F8CF22, 50%);
+  background: #fce791;
 }
 .white-box .wpcf7-captchac {
   width: auto;

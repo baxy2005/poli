@@ -1,5 +1,13 @@
 /* Scss Document */
 
+@function tint($color, $percentage) {
+	@return mix(#FFF, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+	@return mix(#000, $color, $percentage);
+}
+ 
 
 @font-face {
     font-family: 'evelethclean_regular';
